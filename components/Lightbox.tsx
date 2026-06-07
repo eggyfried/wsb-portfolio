@@ -1,0 +1,123 @@
+"use client";
+
+import { useEffect, useCallback } from "react";
+import Image from "next/image";
+import { motion, AnimatePresence } from "framer-motion";
+
+interface LightboxProps {
+  images: { src: string; alt: string; caption?: string }[];
+  currentIndex: number | null;
+  onClose: () => void;
+  onNext: () => void;
+  onPrev: () => void;
+}
+
+export default function Lightbox({
+  images,
+  currentIndex,
+  onClose,
+  onNext,
+  onPrev,
+}: LightboxProps) {
+  const handleKey = useCallback(
+    (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+      if (e.key === "ArrowRight") onNext();
+      if (e.key === "ArrowLeft") onPrev();
+    },
+    [onClose, onNext, onPrev]
+  );
+
+  useEffect(() => {
+    window.addEventListener("keydown", handleKey);
+    document.body.style.overflow = currentIndex !== null ? "hidden" : "";
+    return () => {
+      window.removeEventListener("keydown", handleKey);
+      document.body.style.overflow = "";
+    };
+  }, [handleKey, currentIndex]);
+
+  return (
+    <AnimatePresence>
+      {currentIndex !== null && (
+        <motion.div
+          className="fixed inset-0 z-[100] bg-stone-950/96 lightbox-backdrop flex items-center justify-center"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.4 }}
+          onClick={onClose}
+        >
+          {/* Close */}
+          <button
+            className="absolute top-6 right-8 text-white/70 hover:text-white text-sm tracking-widest uppercase transition-colors z-10 font-body"
+            onClick={onClose}
+            style={{ fontFamily: "var(--font-body)", fontSize: "0.7rem", letterSpacing: "0.12em" }}
+          >
+            Close
+          </button>
+
+          {/* Counter */}
+          <span
+            className="absolute top-6 left-8 text-white/50"
+            style={{ fontFamily: "var(--font-body)", fontSize: "0.7rem", letterSpacing: "0.1em" }}
+          >
+            {currentIndex + 1} / {images.length}
+          </span>
+
+          {/* Image */}
+          <motion.div
+            key={currentIndex}
+            className="relative w-full h-full flex items-center justify-center px-16 py-16"
+            initial={{ opacity: 0, scale: 0.97 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="relative max-h-full max-w-full" style={{ height: "80vh", width: "80vw" }}>
+              <Image
+                src={images[currentIndex].src}
+                alt={images[currentIndex].alt}
+                fill
+                className="object-contain"
+                sizes="80vw"
+                priority
+              />
+            </div>
+          </motion.div>
+
+          {/* Caption */}
+          {images[currentIndex].caption && (
+            <div
+              className="absolute bottom-8 left-0 right-0 text-center text-white/50"
+              style={{ fontFamily: "var(--font-body)", fontSize: "0.7rem", letterSpacing: "0.08em" }}
+            >
+              {images[currentIndex].caption}
+            </div>
+          )}
+
+          {/* Prev / Next */}
+          <button
+            className="absolute left-4 md:left-8 text-white/50 hover:text-white transition-colors p-4"
+            onClick={(e) => { e.stopPropagation(); onPrev(); }}
+            aria-label="Previous image"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
+              <path d="M19 12H5M12 5l-7 7 7 7" />
+            </svg>
+          </button>
+          <button
+            className="absolute right-4 md:right-8 text-white/50 hover:text-white transition-colors p-4"
+            onClick={(e) => { e.stopPropagation(); onNext(); }}
+            aria-label="Next image"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </button>
+        </motion.div>
+      )}
+    </AnimatePresence>
+  );
+}

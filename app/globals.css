@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #fafaf9;
+  --color-fg: #0c0a09;
+  --color-mid: #78716c;
+  --color-border: #e7e5e4;
+  --font-display: 'Josefin Sans', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+  --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --cursor-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  /* Hide default cursor globally when custom cursor is active */
+  cursor: none;
+}
+
+/* Restore cursor on touch devices */
+@media (hover: none) {
+  body { cursor: auto; }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--color-bg); }
+::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 2px; }
+
+/* Typography */
+.font-display { font-family: var(--font-display); }
+
+/* Lightbox backdrop */
+.lightbox-backdrop {
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
+/* Navigation */
+.nav-link {
+  letter-spacing: 0.12em;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.nav-link-active {
+  font-weight: 500;
+  border-bottom: 1px solid currentColor;
+}
+
+/* Footer */
+.footer-link {
+  color: var(--color-mid);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  transition: color 0.3s ease;
+}
+.footer-link:hover { color: var(--color-fg); }
+
+/* Timeline */
+.timeline-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--color-border);
+}
+.timeline-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--color-fg);
+  position: absolute;
+  left: -2px;
+  top: 6px;
+}
+
+/* Remove default pointer/hand cursor from all interactive elements
+   so the custom cursor is never competing with the browser default */
+a, button, [role='button'], input, textarea, select, label {
+  cursor: none !important;
+}
+
+@media (hover: none) {
+  a, button, [role='button'], input, textarea, select, label {
+    cursor: auto !important;
+  }
+}
