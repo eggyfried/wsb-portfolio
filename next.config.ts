@@ -1,18 +1,13 @@
 import type { NextConfig } from "next";
-
+ 
 const nextConfig: NextConfig = {
   images: {
-    // Allow local images from public folder + Unsplash placeholders
-    remotePatterns: [
-      { protocol: "https", hostname: "images.unsplash.com" },
-      { protocol: "https", hostname: "plus.unsplash.com" },
-    ],
-    // Serve local images without size restrictions
-    localPatterns: [
-      { pathname: "/images/**" },
-    ],
+    // Bypass the image optimiser for all images.
+    // Local files in /public are served directly, no 400 errors.
+    // Unsplash placeholders load as normal external URLs.
+    unoptimized: true,
   },
   devIndicators: false,
 };
-
+ 
 export default nextConfig;
