@@ -126,7 +126,7 @@ const projects = [
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/art-direction/american-dream/6.png", caption: "Door Detail" },
+          { src: "/images/art-direction/american-dream/6.jpg", caption: "Door Detail" },
         ],
       },
     ],
@@ -245,7 +245,7 @@ export default function ArtDirectionPage() {
       {/* Banner */}
       <div className="relative w-full overflow-hidden" style={{ height: "60vh" }}>
         <ParallaxImage
-          src="/images/art-direction/header.jpg"
+          src="/images/art-direction/hoppers-hut/10.jpg"
           alt="Art Direction"
           className="w-full h-full"
           priority
