@@ -56,7 +56,7 @@ const projects = [
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/architecture/3_p2/1.jpg", caption: "Project Overview" },
+          { src: "/images/architecture/3_p2/1.JPG", caption: "Project Overview" },
           
         ],
       },
@@ -64,7 +64,7 @@ const projects = [
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/architecture/3_p2/2.jpg", caption: "Approach Sequence" },
+          { src: "/images/architecture/3_p2/2.JPG", caption: "Approach Sequence" },
           
         ],
       },
