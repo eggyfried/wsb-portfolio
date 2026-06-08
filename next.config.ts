@@ -1,18 +1,17 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Pre-render all pages at build time so there's no on-demand
-  // compilation delay when navigating between pages
-  output: "standalone",
   images: {
+    // Allow local images from public folder + Unsplash placeholders
     remotePatterns: [
       { protocol: "https", hostname: "images.unsplash.com" },
       { protocol: "https", hostname: "plus.unsplash.com" },
     ],
-    // Minimise image optimisation overhead in dev
-    minimumCacheTTL: 60,
+    // Serve local images without size restrictions
+    localPatterns: [
+      { pathname: "/images/**" },
+    ],
   },
-  // Reduce dev overlay noise
   devIndicators: false,
 };
 

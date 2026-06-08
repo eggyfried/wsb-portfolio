@@ -46,24 +46,8 @@ import ParallaxImage from "@/components/ParallaxImage";
 // ─────────────────────────────────────────────────────────────────
 
 const projects = [
-  {
+    {
     id: 1,
-    title: "Akira Dewar Flask Facility",
-    year: "2026",
-    description: "Concept set based on the Akira film/manga, W.I.P.",
-    gap: "md",
-    imageGroups: [
-      {
-        layout: "full",
-        gap: "sm",
-        images: [
-          { src: "/images/art-direction/akira/1.jpg", caption: "Concept Sketch" },
-        ],
-      },
-    ],
-  },
-  {
-    id: 2,
     title: "Easton Neston Manor",
     year: "2025/6",
     description: "Facade studies, doorway detail and stair P&E are all based on Easton Neston's Baroque architecture.",
@@ -109,7 +93,7 @@ const projects = [
     ],
   },
   {
-    id: 3,
+    id: 2,
     title: "An American Dream",
     year: "2025",
     description: "Concept set based on the work of mid-century futurists and design around this period (e.g.Syd Mead, Charles Schridde, etc.) The hand-drafted work was completed at FDI's Pinewood Course.",
@@ -148,7 +132,7 @@ const projects = [
     ],
   },
   {
-    id: 4,
+    id: 3,
     title: "Islamic Set",
     year: "2025",
     description: "Originally inspired by a rewatch of Lawrence of Arabia, the hand-drafted work was again completed at FDI's Pinewood Course.",
@@ -178,7 +162,7 @@ const projects = [
     ],
   },
   {
-    id: 5,
+    id: 4,
     title: "Hopper's Hut",
     year: "2025",
     description: "Concept set based on a surveyed abandoned agricultural building in my local area.",
@@ -261,7 +245,7 @@ export default function ArtDirectionPage() {
       {/* Banner */}
       <div className="relative w-full overflow-hidden" style={{ height: "60vh" }}>
         <ParallaxImage
-          src="/images/art direction/header.jpg"
+          src="/images/art-direction/header.jpg"
           alt="Art Direction"
           className="w-full h-full"
           priority
