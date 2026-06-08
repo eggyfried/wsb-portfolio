@@ -57,7 +57,7 @@ const projects = [
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/art direction/akira/1.jpg", caption: "Concept Sketch" },
+          { src: "/images/art-direction/akira/1.jpg", caption: "Concept Sketch" },
         ],
       },
     ],
@@ -73,37 +73,37 @@ const projects = [
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/art direction/Easton Neston/1.png", caption: "Rhino Facade Model" },
+          { src: "/images/art-direction/easton-neston/1.png", caption: "Rhino Facade Model" },
         ],
       },
       {
         layout: "trio",
         gap: "sm",
         images: [
-          { src: "/images/art direction/Easton Neston/2.png", caption: "Set design" },
-          { src: "/images/art direction/Easton Neston/3.png", caption: "Set design" },
-          { src: "/images/art direction/Easton Neston/4.png", caption: "Set design" },
+          { src: "/images/art-direction/easton-neston/2.png", caption: "" },
+          { src: "/images/art-direction/easton-neston/3.png", caption: "" },
+          { src: "/images/art-direction/easton-neston/4.png", caption: "" },
         ],
       },
       {
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/art direction/Easton Neston/5.jpg", caption: "Door Detail" },
+          { src: "/images/art-direction/easton-neston/5.jpg", caption: "Door Detail" },
         ],
       },
        {
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/art direction/Easton Neston/6.jpg", caption: "Facade P&E" },
+          { src: "/images/art-direction/easton-neston/6.jpg", caption: "Facade P&E" },
         ],
       },
       {
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/art direction/Easton Neston/7.jpg", caption: "Interior Stair P&E" },
+          { src: "/images/art-direction/easton-neston/7.jpg", caption: "Interior Stair P&E" },
         ],
       },
     ],
@@ -119,30 +119,30 @@ const projects = [
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/art direction/American Dream/1.jpg", caption: "Set Concept" },
+          { src: "/images/art-direction/american-dream/1.jpg", caption: "Set Concept" },
         ],
       },
       {
         layout: "trio",
         gap: "sm",
         images: [
-          { src: "/images/art direction/American Dream/2.jpg", caption: "Massing Detail" },
-          { src: "/images/art direction/American Dream/3.jpg", caption: "Massing Overview" },
-          { src: "/images/art direction/American Dream/4.jpg", caption: "Massing Detail" },
+          { src: "/images/art-direction/american-dream/2.jpg", caption: "Massing Detail" },
+          { src: "/images/art-direction/american-dream/3.jpg", caption: "Massing Overview" },
+          { src: "/images/art-direction/american-dream/4.jpg", caption: "Massing Detail" },
         ],
       },
         {
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/art direction/American Dream/5.jpg", caption: "Hand-Draughted P&E" },
+          { src: "/images/art-direction/american-dream/5.jpg", caption: "Hand-Draughted P&E" },
         ],
       },
         {
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/art direction/American Dream/6.png", caption: "Door Detail" },
+          { src: "/images/art-direction/american-dream/6.png", caption: "Door Detail" },
         ],
       },
     ],
@@ -158,21 +158,21 @@ const projects = [
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/art direction/Islamic/1.jpg", caption: "Sketchup P&E" },
+          { src: "/images/art-direction/islamic/1.jpg", caption: "Sketchup P&E" },
         ],
       },
       {
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/art direction/Islamic/2.jpg", caption: "Hand-Draughted P&E" },
+          { src: "/images/art-direction/islamic/2.jpg", caption: "Hand-Draughted P&E" },
         ],
       },
        {
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/art direction/Islamic/3.jpg", caption: "Column Detail" },
+          { src: "/images/art-direction/islamic/3.jpg", caption: "Column Detail" },
         ],
       },
     ],
@@ -188,52 +188,52 @@ const projects = [
         layout: "pair",
         gap: "sm",
         images: [
-          { src: "/images/art direction/hoppers hut/1.jpg", caption: "Existing Exterior" },
-          { src: "/images/art direction/hoppers hut/2.jpg", caption: "Existing Interior" },
+          { src: "/images/art-direction/hoppers-hut/1.jpg", caption: "Existing Exterior" },
+          { src: "/images/art-direction/hoppers-hut/2.jpg", caption: "Existing Interior" },
         ],
       },
       {
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/art direction/hoppers hut/3.png", caption: "Rercreated Building" },
+          { src: "/images/art-direction/hoppers-hut/3.png", caption: "Rercreated Building" },
         ],
       },
       {
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/art direction/hoppers hut/4.png", caption: "Building Structure" },
+          { src: "/images/art-direction/hoppers-hut/4.png", caption: "Building Structure" },
         ],
       },
         {
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/art direction/hoppers hut/5.jpg", caption: "Set Concept" },
+          { src: "/images/art-direction/hoppers-hut/5.jpg", caption: "Set Concept" },
         ],
       },
         {
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/art direction/hoppers hut/6.jpg", caption: "Set P&E" },
+          { src: "/images/art-direction/hoppers-hut/6.jpg", caption: "Set P&E" },
         ],
       },
       {
         layout: "pair",
         gap: "sm",
         images: [
-          { src: "/images/art direction/hoppers hut/7.jpg", caption: "" },
-          { src: "/images/art direction/hoppers hut/8.jpg", caption: "" },
+          { src: "/images/art-direction/hoppers-hut/7.jpg", caption: "" },
+          { src: "/images/art-direction/hoppers-hut/8.jpg", caption: "" },
         ],
       },
       {
         layout: "pair",
         gap: "sm",
         images: [
-          { src: "/images/art direction/hoppers hut/9.jpg", caption: "" },
-          { src: "/images/art direction/hoppers hut/10.jpg", caption: "" },
+          { src: "/images/art-direction/hoppers-hut/9.jpg", caption: "" },
+          { src: "/images/art-direction/hoppers-hut/10.jpg", caption: "" },
         ],
       },
     ],
