@@ -16,7 +16,7 @@ const categories: {
     title: "Art Direction",
     href: "/art-direction",
     image:
-      "/images/art direction.jpg",
+      "/images/art-direction.jpg",
     alt: "",
   },
   {
