@@ -57,16 +57,16 @@ const projects = [
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/art-direction/easton-neston/1.png", caption: "Rhino Facade Model" },
+          { src: "/images/art-direction/easton-neston/1.jpg", caption: "Rhino Facade Model" },
         ],
       },
       {
         layout: "trio",
         gap: "sm",
         images: [
-          { src: "/images/art-direction/easton-neston/2.png", caption: "" },
-          { src: "/images/art-direction/easton-neston/3.png", caption: "" },
-          { src: "/images/art-direction/easton-neston/4.png", caption: "" },
+          { src: "/images/art-direction/easton-neston/2.jpg", caption: "" },
+          { src: "/images/art-direction/easton-neston/3.jpg", caption: "" },
+          { src: "/images/art-direction/easton-neston/4.jpg", caption: "" },
         ],
       },
       {
@@ -126,7 +126,7 @@ const projects = [
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/art-direction/american-dream/6.png", caption: "Door Detail" },
+          { src: "/images/art-direction/american-dream/6.jpg", caption: "Door Detail" },
         ],
       },
     ],
@@ -172,22 +172,22 @@ const projects = [
         layout: "pair",
         gap: "sm",
         images: [
-          { src: "/images/art-direction/hoppers-hut/1.JPG", caption: "Existing Exterior" },
-          { src: "/images/art-direction/hoppers-hut/2.JPG", caption: "Existing Interior" },
+          { src: "/images/art-direction/hoppers-hut/1.jpg", caption: "Existing Exterior" },
+          { src: "/images/art-direction/hoppers-hut/2.jpg", caption: "Existing Interior" },
         ],
       },
       {
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/art-direction/hoppers-hut/3.png", caption: "Rercreated Building" },
+          { src: "/images/art-direction/hoppers-hut/3.jpg", caption: "Rercreated Building" },
         ],
       },
       {
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/art-direction/hoppers-hut/4.png", caption: "Building Structure" },
+          { src: "/images/art-direction/hoppers-hut/4.jpg", caption: "Building Structure" },
         ],
       },
         {

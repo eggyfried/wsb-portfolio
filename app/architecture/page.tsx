@@ -56,7 +56,7 @@ const projects = [
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/architecture/3_p2/1.JPG", caption: "Project Overview" },
+          { src: "/images/architecture/3_P2/1.jpg", caption: "Project Overview" },
           
         ],
       },
@@ -64,7 +64,7 @@ const projects = [
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/architecture/3_p2/2.JPG", caption: "Approach Sequence" },
+          { src: "/images/architecture/3_P2/2.jpg", caption: "Approach Sequence" },
           
         ],
       },
@@ -72,16 +72,16 @@ const projects = [
         layout: "trio",
         gap: "sm",
         images: [
-          { src: "/images/architecture/3_p2/3.jpg", caption: "Basement Plan" },
-          { src: "/images/architecture/3_p2/4.jpg", caption: "Ground Flr Plan" },
-          { src: "/images/architecture/3_p2/5.jpg", caption: "First Flr Plan" },
+          { src: "/images/architecture/3_P2/3.jpg", caption: "Basement Plan" },
+          { src: "/images/architecture/3_P2/4.jpg", caption: "Ground Flr Plan" },
+          { src: "/images/architecture/3_P2/5.jpg", caption: "First Flr Plan" },
         ],
       },
       {
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/architecture/3_p2/6.jpg", caption: "Construction Detail" },
+          { src: "/images/architecture/3_P2/6.jpg", caption: "Construction Detail" },
           
         ],
       },
@@ -89,7 +89,7 @@ const projects = [
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/architecture/3_p2/7.jpg", caption: "Park Elevation" },
+          { src: "/images/architecture/3_P2/7.jpg", caption: "Park Elevation" },
           
         ],
       },
@@ -97,7 +97,7 @@ const projects = [
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/architecture/3_p2/8.jpg", caption: "Retrofit Section" },
+          { src: "/images/architecture/3_P2/8.jpg", caption: "Retrofit Section" },
           
         ],
       },
@@ -105,7 +105,7 @@ const projects = [
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/architecture/3_p2/9.jpg", caption: "Courtyard Section" },
+          { src: "/images/architecture/3_P2/9.jpg", caption: "Courtyard Section" },
           
         ],
       },
@@ -113,7 +113,7 @@ const projects = [
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/architecture/3_p2/10.jpg", caption: "Park Perspective" },
+          { src: "/images/architecture/3_P2/10.jpg", caption: "Park Perspective" },
           
         ],
       },
@@ -121,8 +121,8 @@ const projects = [
         layout: "pair",
         gap: "sm",
         images: [
-          { src: "/images/architecture/3_p2/11.png", caption: "Cafe Int" },
-          { src: "/images/architecture/3_p2/12.jpg", caption: "Street Perspective" },
+          { src: "/images/architecture/3_P2/11.jpg", caption: "Cafe Int" },
+          { src: "/images/architecture/3_P2/12.jpg", caption: "Street Perspective" },
           
         ],
       },
@@ -140,39 +140,39 @@ const projects = [
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/architecture/3_p1/1.jpg", caption: "Project Overview" },
+          { src: "/images/architecture/3_P1/1.jpg", caption: "Project Overview" },
         ],
       },
       {
         layout: "trio",
         gap: "sm",
         images: [
-          { src: "/images/architecture/3_p1/2.jpg", caption: "Ground Flr Plan" },
-          { src: "/images/architecture/3_p1/3.jpg", caption: "Mezzanine Flr Plan" },
-          { src: "/images/architecture/3_p1/4.jpg", caption: "First Flr Plan" },
+          { src: "/images/architecture/3_P1/2.jpg", caption: "Ground Flr Plan" },
+          { src: "/images/architecture/3_P1/3.jpg", caption: "Mezzanine Flr Plan" },
+          { src: "/images/architecture/3_P1/4.jpg", caption: "First Flr Plan" },
         ],
       },
        {
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/architecture/3_p1/5.jpg", caption: "Concept Sketch" },
+          { src: "/images/architecture/3_P1/5.jpg", caption: "Concept Sketch" },
         ],
       },
       {
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/architecture/3_p1/6.png", caption: "Environmental Strategies" },
+          { src: "/images/architecture/3_P1/6.jpg", caption: "Environmental Strategies" },
         ],
       },
        {
         layout: "trio",
         gap: "sm",
         images: [
-          { src: "/images/architecture/3_p1/7.jpg", caption: "" },
-          { src: "/images/architecture/3_p1/8.jpg", caption: "" },
-          { src: "/images/architecture/3_p1/9.jpg", caption: "" },
+          { src: "/images/architecture/3_P1/7.jpg", caption: "" },
+          { src: "/images/architecture/3_P1/8.jpg", caption: "" },
+          { src: "/images/architecture/3_P1/9.jpg", caption: "" },
         ],
       },
     ],
@@ -189,45 +189,45 @@ const projects = [
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/architecture/2_p3/1.jpg", caption: "Project Overview" },
+          { src: "/images/architecture/2_P3/1.jpg", caption: "Project Overview" },
         ],
       },
       {
         layout: "trio",
         gap: "sm",
         images: [
-          { src: "/images/architecture/2_p3/2.jpg", caption: "Ground Flr Plan" },
-          { src: "/images/architecture/2_p3/3.jpg", caption: "First Flr Plan" },
-          { src: "/images/architecture/2_p3/4.jpg", caption: "Second Flr Plan" },
+          { src: "/images/architecture/2_P3/2.jpg", caption: "Ground Flr Plan" },
+          { src: "/images/architecture/2_P3/3.jpg", caption: "First Flr Plan" },
+          { src: "/images/architecture/2_P3/4.jpg", caption: "Second Flr Plan" },
         ],
       },
       {
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/architecture/2_p3/5.jpg", caption: "Construction Section" },
+          { src: "/images/architecture/2_P3/5.jpg", caption: "Construction Section" },
         ],
       },
        {
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/architecture/2_p3/6.jpg", caption: "Internal Courtyard" },
+          { src: "/images/architecture/2_P3/6.jpg", caption: "Internal Courtyard" },
         ],
       },
        {
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/architecture/2_p3/7.jpg", caption: "Street Interface" },
+          { src: "/images/architecture/2_P3/7.jpg", caption: "Street Interface" },
         ],
       },
       {
         layout: "pair",
         gap: "sm",
         images: [
-          { src: "/images/architecture/2_p3/8.png", caption: "Roof Garden" },
-          { src: "/images/architecture/2_p3/9.jpg", caption: "Apartment Int" },
+          { src: "/images/architecture/2_P3/8.jpg", caption: "Roof Garden" },
+          { src: "/images/architecture/2_P3/9.jpg", caption: "Apartment Int" },
         ],
       },
    
@@ -245,30 +245,30 @@ const projects = [
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/architecture/2_p2/1.jpg", caption: "Project Overview" },
+          { src: "/images/architecture/2_P2/1.jpg", caption: "Project Overview" },
         ],
       },
        {
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/architecture/2_p2/2.jpg", caption: "Axonometric Breakdown" },
+          { src: "/images/architecture/2_P2/2.jpg", caption: "Axonometric Breakdown" },
         ],
       },
       {
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/architecture/2_p2/3.jpg", caption: "Massing Analysis" },
+          { src: "/images/architecture/2_P2/3.jpg", caption: "Massing Analysis" },
         ],
       },
       {
         layout: "trio",
         gap: "sm",
         images: [
-          { src: "/images/architecture/2_p2/4.png", caption: "Atrium" },
-          { src: "/images/architecture/2_p2/5.png", caption: "Circulation" },
-          { src: "/images/architecture/2_p2/6.png", caption: "Theatre Int" },
+          { src: "/images/architecture/2_P2/4.jpg", caption: "Atrium" },
+          { src: "/images/architecture/2_P2/5.jpg", caption: "Circulation" },
+          { src: "/images/architecture/2_P2/6.jpg", caption: "Theatre Int" },
         ],
       },
     ],
@@ -285,23 +285,23 @@ const projects = [
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/architecture/2_p1/1.jpg", caption: "Project Overview" },
+          { src: "/images/architecture/2_P1/1.jpg", caption: "Project Overview" },
         ],
       },
       {
         layout: "pair",
         gap: "sm",
         images: [
-          { src: "/images/architecture/2_p1/2.jpg", caption: "Structural Model" },
-          { src: "/images/architecture/2_p1/3.jpg", caption: "Structural Model" },
+          { src: "/images/architecture/2_P1/2.jpg", caption: "Structural Model" },
+          { src: "/images/architecture/2_P1/3.jpg", caption: "Structural Model" },
         ],
       },
       {
         layout: "pair",
         gap: "sm",
         images: [
-          { src: "/images/architecture/2_p1/4.jpg", caption: "Interior Perspective" },
-          { src: "/images/architecture/2_p1/5.jpg", caption: "Exterior Perspective" },
+          { src: "/images/architecture/2_P1/4.jpg", caption: "Interior Perspective" },
+          { src: "/images/architecture/2_P1/5.jpg", caption: "Exterior Perspective" },
         ],
       },
     ],
@@ -318,16 +318,16 @@ const projects = [
         layout: "trio",
         gap: "sm",
         images: [
-          { src: "/images/architecture/1_p4/1.jpg", caption: "" },
-          { src: "/images/architecture/1_p4/2.jpg", caption: "" },
-          { src: "/images/architecture/1_p4/3.jpg", caption: "" },
+          { src: "/images/architecture/1_P4/1.jpg", caption: "" },
+          { src: "/images/architecture/1_P4/2.jpg", caption: "" },
+          { src: "/images/architecture/1_P4/3.jpg", caption: "" },
         ],
       },
       {
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/architecture/1_p4/4.jpg", caption: "" },
+          { src: "/images/architecture/1_P4/4.jpg", caption: "" },
         ],
       },
     ],
