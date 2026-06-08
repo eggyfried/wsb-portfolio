@@ -285,7 +285,7 @@ const projects = [
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/architecture/2_P1/1.jpg", caption: "Project Overview" },
+          { src: "/images/architecture/2_P1/1.JPG", caption: "Project Overview" },
         ],
       },
       {
@@ -318,16 +318,16 @@ const projects = [
         layout: "trio",
         gap: "sm",
         images: [
-          { src: "/images/architecture/1_P4/1.jpg", caption: "" },
-          { src: "/images/architecture/1_P4/2.jpg", caption: "" },
-          { src: "/images/architecture/1_P4/3.jpg", caption: "" },
+          { src: "/images/architecture/1_P4/1.JPG", caption: "" },
+          { src: "/images/architecture/1_P4/2.JPG", caption: "" },
+          { src: "/images/architecture/1_P4/3.JPG", caption: "" },
         ],
       },
       {
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/architecture/1_P4/4.jpg", caption: "" },
+          { src: "/images/architecture/1_P4/4.JPG", caption: "" },
         ],
       },
     ],
@@ -355,7 +355,7 @@ export default function ArchitecturePage() {
       {/* Banner — no grey bar */}
       <div className="relative w-full overflow-hidden" style={{ height: "60vh" }}>
         <ParallaxImage
-          src="/images/architecture/header.jpg"
+          src="/images/architecture/hoppers-hut/10.jpg"
           alt="Architecture"
           className="w-full h-full"
           priority

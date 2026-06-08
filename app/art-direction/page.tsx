@@ -126,7 +126,7 @@ const projects = [
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/art-direction/american-dream/6.jpg", caption: "Door Detail" },
+          { src: "/images/art-direction/american-dream/6.png", caption: "Door Detail" },
         ],
       },
     ],
@@ -172,8 +172,8 @@ const projects = [
         layout: "pair",
         gap: "sm",
         images: [
-          { src: "/images/art-direction/hoppers-hut/1.jpg", caption: "Existing Exterior" },
-          { src: "/images/art-direction/hoppers-hut/2.jpg", caption: "Existing Interior" },
+          { src: "/images/art-direction/hoppers-hut/1.JPG", caption: "Existing Exterior" },
+          { src: "/images/art-direction/hoppers-hut/2.JPG", caption: "Existing Interior" },
         ],
       },
       {

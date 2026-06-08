@@ -27,7 +27,7 @@ const photos = [
     caption: "St Ives, UK, 2024",
   },
   {
-    src: "/images/photography/d.jpg",
+    src: "/images/photography/d.JPG",
     caption: "Seven Sisters, UK, 2023",
   },
   {
@@ -95,7 +95,7 @@ const photos = [
     caption: "Hakone, Japan, 2025",
   },
   {
-    src: "/images/photography/u.jpg",
+    src: "/images/photography/u.JPG",
     caption: "Staplehurst, Uk 2023",
   },
   {
