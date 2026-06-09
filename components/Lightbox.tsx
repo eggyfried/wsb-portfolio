@@ -64,10 +64,10 @@ export default function Lightbox({
             {currentIndex + 1} / {images.length}
           </span>
 
-          {/* ── MOBILE: counter top left only ── */}
+          {/* ── MOBILE: counter below header (top-20 clears the 64px nav) ── */}
           <span
-            className="md:hidden absolute top-5 left-6 text-white/60"
-            style={{ fontFamily: "var(--font-body)", fontSize: "0.65rem", letterSpacing: "0.1em" }}
+            className="md:hidden absolute left-6 text-white/60"
+            style={{ fontFamily: "var(--font-body)", fontSize: "0.65rem", letterSpacing: "0.1em", top: "80px" }}
           >
             {currentIndex + 1} / {images.length}
           </span>
