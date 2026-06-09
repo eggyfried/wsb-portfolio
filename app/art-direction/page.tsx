@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import ScrollReveal from "@/components/ScrollReveal";
 import ParallaxImage from "@/components/ParallaxImage";
 
 // ─────────────────────────────────────────────────────────────────
@@ -46,7 +45,7 @@ import ParallaxImage from "@/components/ParallaxImage";
 // ─────────────────────────────────────────────────────────────────
 
 const projects = [
-   {
+    {
     id: 1,
     title: "Easton Neston Manor",
     year: "2025/6",
@@ -275,14 +274,14 @@ export default function ArtDirectionPage() {
 
       {/* Intro */}
       <div className="px-8 md:px-16 lg:px-24 py-16 md:py-24">
-        <ScrollReveal>
+        <div>
           <p
             className="max-w-xl text-stone-500 leading-relaxed"
             style={{ fontFamily: "var(--font-body)", fontSize: "0.9rem", fontWeight: 300 }}
           >
-           A collection of self-led work (with some hand draughting from FDI). These have been great for learning the overlaps between film and architecture. Each mini project aims to explore a different style of design.
+             A collection of self-led work (with some hand draughting from FDI). These have been great for learning the overlaps between film and architecture. Each mini project aims to explore a different style of design.
           </p>
-        </ScrollReveal>
+        </div>
       </div>
 
       {/* Projects */}
@@ -305,7 +304,7 @@ function ArtDirectionProject({
   return (
     <div className={projectGapClass}>
       {/* Header — always left aligned */}
-      <ScrollReveal delay={0.05}>
+      <div>
         <div className="flex items-baseline justify-between mb-6 pb-4 border-b border-stone-200">
           <h2
             className="font-display font-light text-stone-900"
@@ -328,7 +327,7 @@ function ArtDirectionProject({
             {project.description}
           </p>
         )}
-      </ScrollReveal>
+      </div>
 
       {/* Image groups */}
       {project.imageGroups.map((group, gi) => (
@@ -368,9 +367,9 @@ function ImageGroup({
         loading="lazy"
       />
       {img.caption && (
-        <div className="absolute inset-0 bg-stone-900/0 group-hover:bg-stone-900/40 transition-all duration-500 flex items-center justify-center">
+        <div className="absolute inset-0 bg-stone-900/0 group-hover:bg-stone-900/40 flex items-center justify-center">
           <span
-            className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-white text-center px-4"
+            className="opacity-0 group-hover:opacity-100 text-white text-center px-4"
             style={{ fontFamily: "var(--font-body)", fontSize: "0.7rem", letterSpacing: "0.15em", textTransform: "uppercase" }}
           >
             {img.caption}
@@ -381,7 +380,7 @@ function ImageGroup({
   );
 
   if (layout === "full") return (
-    <ScrollReveal delay={0.1}>
+    <div>
       <div className="relative w-full overflow-hidden group">
         <Image
           src={images[0].src}
@@ -389,14 +388,14 @@ function ImageGroup({
           width={2400}
           height={1600}
           className="w-full h-auto transition-all duration-500"
-          sizes="100vw"
+          sizes="(max-width: 768px) 100vw, 80vw"
           loading="lazy"
           style={{ display: "block" }}
         />
         {images[0].caption && (
-          <div className="absolute inset-0 bg-stone-900/0 group-hover:bg-stone-900/40 transition-all duration-500 flex items-center justify-center">
+          <div className="absolute inset-0 bg-stone-900/0 group-hover:bg-stone-900/40 flex items-center justify-center">
             <span
-              className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-white text-center px-4"
+              className="opacity-0 group-hover:opacity-100 text-white text-center px-4"
               style={{ fontFamily: "var(--font-body)", fontSize: "0.7rem", letterSpacing: "0.15em", textTransform: "uppercase" }}
             >
               {images[0].caption}
@@ -404,31 +403,31 @@ function ImageGroup({
           </div>
         )}
       </div>
-    </ScrollReveal>
+    </div>
   );
 
   if (layout === "left") return (
-    <ScrollReveal delay={0.1}>
+    <div>
       <div style={{ width: "65%" }}>
         <Img img={images[0]} aspect="4/3" sizes="65vw" />
       </div>
-    </ScrollReveal>
+    </div>
   );
 
   if (layout === "right") return (
-    <ScrollReveal delay={0.1}>
+    <div>
       <div className="flex justify-end">
         <div style={{ width: "65%" }}>
           <Img img={images[0]} aspect="4/3" sizes="65vw" />
         </div>
       </div>
-    </ScrollReveal>
+    </div>
   );
 
   if (layout === "sequence") return (
     <div className="flex flex-col gap-4">
       {images.map((img, i) => (
-        <ScrollReveal key={i} delay={0.1}>
+        <div>
           <div className="relative w-full overflow-hidden group" style={{ aspectRatio: "16/9" }}>
             <Image
               src={img.src}
@@ -439,9 +438,9 @@ function ImageGroup({
               loading="lazy"
             />
             {img.caption && (
-              <div className="absolute inset-0 bg-stone-900/0 group-hover:bg-stone-900/40 transition-all duration-500 flex items-center justify-center">
+              <div className="absolute inset-0 bg-stone-900/0 group-hover:bg-stone-900/40 flex items-center justify-center">
                 <span
-                  className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-white text-center px-4"
+                  className="opacity-0 group-hover:opacity-100 text-white text-center px-4"
                   style={{ fontFamily: "var(--font-body)", fontSize: "0.7rem", letterSpacing: "0.15em", textTransform: "uppercase" }}
                 >
                   {img.caption}
@@ -449,7 +448,7 @@ function ImageGroup({
               </div>
             )}
           </div>
-        </ScrollReveal>
+        </div>
       ))}
     </div>
   );
@@ -457,41 +456,41 @@ function ImageGroup({
   if (layout === "pair") return (
     <div className="grid grid-cols-2 gap-2 md:gap-4">
       {images.slice(0, 2).map((img, i) => (
-        <ScrollReveal key={i} delay={0.1} direction="none">
+        <div>
           <Img img={img} aspect="4/3" sizes="50vw" />
-        </ScrollReveal>
+        </div>
       ))}
     </div>
   );
 
   if (layout === "feature-left") return (
     <div className="grid grid-cols-5 gap-2 md:gap-4">
-      <ScrollReveal delay={0.1} className="md:col-span-3" direction="none">
+      <div>
         <Img img={images[0]} aspect="4/3" sizes="60vw" />
-      </ScrollReveal>
-      <ScrollReveal delay={0.2} className="md:col-span-2" direction="none">
+      </div>
+      <div>
         <Img img={images[1]} aspect="4/3" sizes="40vw" />
-      </ScrollReveal>
+      </div>
     </div>
   );
 
   if (layout === "feature-right") return (
     <div className="grid grid-cols-5 gap-2 md:gap-4">
-      <ScrollReveal delay={0.1} className="md:col-span-2" direction="none">
+      <div>
         <Img img={images[0]} aspect="4/3" sizes="40vw" />
-      </ScrollReveal>
-      <ScrollReveal delay={0.2} className="md:col-span-3" direction="none">
+      </div>
+      <div>
         <Img img={images[1]} aspect="4/3" sizes="60vw" />
-      </ScrollReveal>
+      </div>
     </div>
   );
 
   if (layout === "trio") return (
     <div className="grid grid-cols-3 gap-2 md:gap-4">
       {images.slice(0, 3).map((img, i) => (
-        <ScrollReveal key={i} delay={0.1}>
+        <div>
           <Img img={img} aspect="4/3" sizes="33vw" />
-        </ScrollReveal>
+        </div>
       ))}
     </div>
   );

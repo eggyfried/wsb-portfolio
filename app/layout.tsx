@@ -40,7 +40,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${josefinSans.variable} ${dmSans.variable}`}>
-      <body className="antialiased">
+      <body className="antialiased min-h-screen">
         <CustomCursor />
         <LoadingScreen />
         <Navigation />

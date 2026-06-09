@@ -456,7 +456,7 @@ export default function PhotographyPage() {
       {/* Banner */}
       <div className="relative w-full overflow-hidden" style={{ height: "60vh" }}>
         <ParallaxImage
-          src="images/photography/header.jpg"
+          src="/images/photography/header.jpg"
           alt="Photography"
           className="w-full h-full"
           priority

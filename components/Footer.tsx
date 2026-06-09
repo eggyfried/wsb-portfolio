@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="border-t border-stone-200 px-6 md:px-10 lg:px-16 py-8 mt-auto">
+    <footer className="border-t border-stone-200 px-6 md:px-10 lg:px-16 py-8">
       {/* Desktop footer */}
       <div className="hidden md:flex flex-row justify-between items-center">
         <p className="font-display text-stone-800 text-sm font-light tracking-wide">
