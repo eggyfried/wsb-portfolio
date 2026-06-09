@@ -46,178 +46,92 @@ import ParallaxImage from "@/components/ParallaxImage";
 // ─────────────────────────────────────────────────────────────────
 
 const projects = [
-    {
+  {
     id: 1,
-    title: "Easton Neston Manor",
-    year: "2025/6",
-    description: "Facade studies, doorway detail and stair P&E are all based on Easton Neston's Baroque architecture.",
-    gap: "md",
+    title: "The Cherry Orchard",
+    year: "2024",
+    description: "Chekhov's final masterpiece reimagined in a contemporary industrial space.",
+    gap: "lg",
     imageGroups: [
       {
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/art-direction/easton-neston/1.jpg", caption: "Rhino Facade Model" },
-        ],
-      },
-      {
-        layout: "trio",
-        gap: "sm",
-        images: [
-          { src: "/images/art-direction/easton-neston/2.jpg", caption: "" },
-          { src: "/images/art-direction/easton-neston/3.jpg", caption: "" },
-          { src: "/images/art-direction/easton-neston/4.jpg", caption: "" },
-        ],
-      },
-      {
-        layout: "full",
-        gap: "sm",
-        images: [
-          { src: "/images/art-direction/easton-neston/5.jpg", caption: "Door Detail" },
-        ],
-      },
-       {
-        layout: "full",
-        gap: "sm",
-        images: [
-          { src: "/images/art-direction/easton-neston/6.jpg", caption: "Facade P&E" },
-        ],
-      },
-      {
-        layout: "full",
-        gap: "sm",
-        images: [
-          { src: "/images/art-direction/easton-neston/7.jpg", caption: "Interior Stair P&E" },
+          { src: "https://images.unsplash.com/photo-1518281420975-50db6e5d0a97?w=1200&q=80", caption: "Set design" },
         ],
       },
     ],
   },
   {
     id: 2,
-    title: "An American Dream",
-    year: "2025",
-    description: "Concept set based on the work of mid-century futurists and design around this period (e.g.Syd Mead, Charles Schridde, etc.) The hand-drafted work was completed at FDI's Pinewood Course.",
+    title: "Hamlet",
+    year: "2023",
+    description: "A stripped-back production exploring duality and transformation.",
     gap: "md",
     imageGroups: [
       {
-        layout: "full",
+        layout: "pair",
         gap: "sm",
         images: [
-          { src: "/images/art-direction/american-dream/1.jpg", caption: "Set Concept" },
-        ],
-      },
-      {
-        layout: "trio",
-        gap: "sm",
-        images: [
-          { src: "/images/art-direction/american-dream/2.jpg", caption: "Massing Detail" },
-          { src: "/images/art-direction/american-dream/3.jpg", caption: "Massing Overview" },
-          { src: "/images/art-direction/american-dream/4.jpg", caption: "Massing Detail" },
-        ],
-      },
-        {
-        layout: "full",
-        gap: "sm",
-        images: [
-          { src: "/images/art-direction/american-dream/5.jpg", caption: "Hand-Draughted P&E" },
-        ],
-      },
-        {
-        layout: "full",
-        gap: "sm",
-        images: [
-          { src: "/images/art-direction/american-dream/6.jpg", caption: "Door Detail" },
+          { src: "https://images.unsplash.com/photo-1507276311058-5e6f4a04e6a2?w=900&q=80", caption: "Stage left" },
+          { src: "https://images.unsplash.com/photo-1514306191717-452ec28c7814?w=900&q=80", caption: "Stage right" },
         ],
       },
     ],
   },
   {
     id: 3,
-    title: "Islamic Set",
-    year: "2025",
-    description: "Originally inspired by a rewatch of Lawrence of Arabia, the hand-drafted work was again completed at FDI's Pinewood Course.",
-    gap: "md",
+    title: "The Glass Menagerie",
+    year: "2023",
+    description: "Memory and fragility rendered through transparent planes and diffused light.",
+    gap: "xl",
     imageGroups: [
-       {
-        layout: "full",
-        gap: "sm",
-        images: [
-          { src: "/images/art-direction/islamic/1.jpg", caption: "Sketchup P&E" },
-        ],
-      },
       {
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/art-direction/islamic/2.jpg", caption: "Hand-Draughted P&E" },
+          { src: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=1200&q=80", caption: "Full set" },
         ],
       },
-       {
-        layout: "full",
+      {
+        layout: "pair",
         gap: "sm",
         images: [
-          { src: "/images/art-direction/islamic/3.jpg", caption: "Column Detail" },
+          { src: "https://images.unsplash.com/photo-1503095396549-807759245b35?w=1200&q=80", caption: "Act I" },
+          { src: "https://images.unsplash.com/photo-1566417713940-fe7c737a9ef2?w=1200&q=80", caption: "Act II" },
         ],
       },
     ],
   },
   {
     id: 4,
-    title: "Hopper's Hut",
-    year: "2025",
-    description: "Concept set based on a surveyed abandoned agricultural building in my local area.",
+    title: "A Midsummer Night's Dream",
+    year: "2022",
+    description: "The forest as a psychological landscape, shifting between reality and dream.",
     gap: "md",
     imageGroups: [
       {
-        layout: "pair",
+        layout: "feature-left",
         gap: "sm",
         images: [
-          { src: "/images/art-direction/hoppers-hut/1.JPG", caption: "Existing Exterior" },
-          { src: "/images/art-direction/hoppers-hut/2.JPG", caption: "Existing Interior" },
+          { src: "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=1200&q=80", caption: "The forest" },
+          { src: "https://images.unsplash.com/photo-1514306191717-452ec28c7814?w=900&q=80", caption: "Detail" },
         ],
       },
+    ],
+  },
+  {
+    id: 5,
+    title: "Three Sisters",
+    year: "2022",
+    description: "Confined interiors that mirror the characters' emotional imprisonment.",
+    gap: "md",
+    imageGroups: [
       {
-        layout: "full",
+        layout: "right",
         gap: "sm",
         images: [
-          { src: "/images/art-direction/hoppers-hut/3.jpg", caption: "Rercreated Building" },
-        ],
-      },
-      {
-        layout: "full",
-        gap: "sm",
-        images: [
-          { src: "/images/art-direction/hoppers-hut/4.jpg", caption: "Building Structure" },
-        ],
-      },
-        {
-        layout: "full",
-        gap: "sm",
-        images: [
-          { src: "/images/art-direction/hoppers-hut/5.jpg", caption: "Set Concept" },
-        ],
-      },
-        {
-        layout: "full",
-        gap: "sm",
-        images: [
-          { src: "/images/art-direction/hoppers-hut/6.jpg", caption: "Set P&E" },
-        ],
-      },
-      {
-        layout: "pair",
-        gap: "sm",
-        images: [
-          { src: "/images/art-direction/hoppers-hut/7.jpg", caption: "" },
-          { src: "/images/art-direction/hoppers-hut/8.jpg", caption: "" },
-        ],
-      },
-      {
-        layout: "pair",
-        gap: "sm",
-        images: [
-          { src: "/images/art-direction/hoppers-hut/9.jpg", caption: "" },
-          { src: "/images/art-direction/hoppers-hut/10.jpg", caption: "" },
+          { src: "https://images.unsplash.com/photo-1507276311058-5e6f4a04e6a2?w=900&q=80", caption: "Interior" },
         ],
       },
     ],
@@ -245,7 +159,7 @@ export default function ArtDirectionPage() {
       {/* Banner */}
       <div className="relative w-full overflow-hidden" style={{ height: "60vh" }}>
         <ParallaxImage
-          src="/images/art-direction/hoppers-hut/10.jpg"
+          src="https://images.unsplash.com/photo-1518281420975-50db6e5d0a97?w=1600&q=80"
           alt="Art Direction"
           className="w-full h-full"
           priority
@@ -280,7 +194,8 @@ export default function ArtDirectionPage() {
             className="max-w-xl text-stone-500 leading-relaxed"
             style={{ fontFamily: "var(--font-body)", fontSize: "0.9rem", fontWeight: 300 }}
           >
-            A collection of self-led work (with some hand draughting from FDI). These have been great for learning the overlaps between film and architecture. Each mini project aims to explore a different style of design.
+            A collection of art direction projects spanning theatre, opera, and live performance.
+            Each project explores the relationship between space, light, and narrative.
           </p>
         </ScrollReveal>
       </div>
@@ -428,7 +343,7 @@ function ImageGroup({
   if (layout === "sequence") return (
     <div className="flex flex-col gap-4">
       {images.map((img, i) => (
-        <ScrollReveal key={i} delay={0.05 + i * 0.1}>
+        <ScrollReveal key={i} delay={0.1}>
           <div className="relative w-full overflow-hidden group" style={{ aspectRatio: "16/9" }}>
             <Image
               src={img.src}
@@ -457,7 +372,7 @@ function ImageGroup({
   if (layout === "pair") return (
     <div className="grid grid-cols-2 gap-2 md:gap-4">
       {images.slice(0, 2).map((img, i) => (
-        <ScrollReveal key={i} delay={0.05 + i * 0.08} direction={i === 0 ? "left" : "right"}>
+        <ScrollReveal key={i} delay={0.1} direction="none">
           <Img img={img} aspect="4/3" sizes="50vw" />
         </ScrollReveal>
       ))}
@@ -466,10 +381,10 @@ function ImageGroup({
 
   if (layout === "feature-left") return (
     <div className="grid grid-cols-5 gap-2 md:gap-4">
-      <ScrollReveal delay={0.1} className="md:col-span-3" direction="left">
+      <ScrollReveal delay={0.1} className="md:col-span-3" direction="none">
         <Img img={images[0]} aspect="4/3" sizes="60vw" />
       </ScrollReveal>
-      <ScrollReveal delay={0.2} className="md:col-span-2" direction="right">
+      <ScrollReveal delay={0.2} className="md:col-span-2" direction="none">
         <Img img={images[1]} aspect="4/3" sizes="40vw" />
       </ScrollReveal>
     </div>
@@ -477,10 +392,10 @@ function ImageGroup({
 
   if (layout === "feature-right") return (
     <div className="grid grid-cols-5 gap-2 md:gap-4">
-      <ScrollReveal delay={0.1} className="md:col-span-2" direction="left">
+      <ScrollReveal delay={0.1} className="md:col-span-2" direction="none">
         <Img img={images[0]} aspect="4/3" sizes="40vw" />
       </ScrollReveal>
-      <ScrollReveal delay={0.2} className="md:col-span-3" direction="right">
+      <ScrollReveal delay={0.2} className="md:col-span-3" direction="none">
         <Img img={images[1]} aspect="4/3" sizes="60vw" />
       </ScrollReveal>
     </div>
@@ -489,7 +404,7 @@ function ImageGroup({
   if (layout === "trio") return (
     <div className="grid grid-cols-3 gap-2 md:gap-4">
       {images.slice(0, 3).map((img, i) => (
-        <ScrollReveal key={i} delay={0.05 + i * 0.08}>
+        <ScrollReveal key={i} delay={0.1}>
           <Img img={img} aspect="4/3" sizes="33vw" />
         </ScrollReveal>
       ))}

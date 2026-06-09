@@ -16,22 +16,22 @@ const categories: {
     title: "Art Direction",
     href: "/art-direction",
     image:
-      "/images/art-direction.jpg",
-    alt: "",
+      "https://images.unsplash.com/photo-1518281420975-50db6e5d0a97?w=1600&q=80",
+    alt: "Art direction theatrical space",
   },
   {
     title: "Architecture",
     href: "/architecture",
     image:
-      "/images/architecture.jpg",
-    alt: "",
+      "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1600&q=80",
+    alt: "Architecture building design",
   },
   {
     title: "Photography",
     href: "/photography",
     image:
-      "/images/photography.jpg",
-    alt: "",
+      "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=1600&q=80",
+    alt: "Photography portfolio",
   },
   {
     title: "CV",
@@ -57,7 +57,7 @@ export default function HomePage() {
       <section ref={heroRef} className="relative h-screen w-full overflow-hidden">
         <motion.div className="absolute inset-0 scale-110" style={{ y: heroY }}>
           <Image
-            src="/images/main.jpg"
+            src="https://images.unsplash.com/photo-1503095396549-807759245b35?w=2000&q=80"
             alt="William Stewart-Blacker Portfolio Hero"
             fill
             className="object-cover"

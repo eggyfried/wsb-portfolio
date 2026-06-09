@@ -46,288 +46,95 @@ import ParallaxImage from "@/components/ParallaxImage";
 const projects = [
   {
     id: 1,
-    title: "The Hive",
+    title: "Pavilion Study",
     year: "2024",
-    type: "Year 3 Project 2",
-    description: "Doncaster archives retrofit. Promoting sustainable technologies, education and a platform for a thriving community.",
-    gap: "md",
+    type: "Competition Entry",
+    description: "A temporary pavilion exploring thresholds between interior and exterior.",
+    gap: "lg",
     imageGroups: [
-      {
-        layout: "full",
-        gap: "sm",
-        images: [
-          { src: "/images/architecture/3_P2/1.jpg", caption: "Project Overview" },
-          
-        ],
-      },
-      {
-        layout: "full",
-        gap: "sm",
-        images: [
-          { src: "/images/architecture/3_P2/2.jpg", caption: "Approach Sequence" },
-          
-        ],
-      },
       {
         layout: "trio",
         gap: "sm",
         images: [
-          { src: "/images/architecture/3_P2/3.jpg", caption: "Basement Plan" },
-          { src: "/images/architecture/3_P2/4.jpg", caption: "Ground Flr Plan" },
-          { src: "/images/architecture/3_P2/5.jpg", caption: "First Flr Plan" },
-        ],
-      },
-      {
-        layout: "full",
-        gap: "sm",
-        images: [
-          { src: "/images/architecture/3_P2/6.jpg", caption: "Construction Detail" },
-          
-        ],
-      },
-        {
-        layout: "full",
-        gap: "sm",
-        images: [
-          { src: "/images/architecture/3_P2/7.jpg", caption: "Park Elevation" },
-          
-        ],
-      },
-      {
-        layout: "full",
-        gap: "sm",
-        images: [
-          { src: "/images/architecture/3_P2/8.jpg", caption: "Retrofit Section" },
-          
-        ],
-      },
-       {
-        layout: "full",
-        gap: "sm",
-        images: [
-          { src: "/images/architecture/3_P2/9.jpg", caption: "Courtyard Section" },
-          
-        ],
-      },
-      {
-        layout: "full",
-        gap: "sm",
-        images: [
-          { src: "/images/architecture/3_P2/10.jpg", caption: "Park Perspective" },
-          
-        ],
-      },
-        {
-        layout: "pair",
-        gap: "sm",
-        images: [
-          { src: "/images/architecture/3_P2/11.jpg", caption: "Cafe Int" },
-          { src: "/images/architecture/3_P2/12.jpg", caption: "Street Perspective" },
-          
+          { src: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1400&q=80", caption: "Exterior perspective" },
+          { src: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80", caption: "Detail" },
+          { src: "https://images.unsplash.com/photo-1490971588704-2a2d5eab7e77?w=800&q=80", caption: "Plan" },
         ],
       },
     ],
   },
   {
     id: 2,
-    title: "Attende Topp",
-    year: "2023/4",
-    type: "Year 3 Project 1",
-    description: "Norwegian bathhouse in the centre of Bergen. A monument to the local community's resilience and value in climate promotion and research.",
+    title: "Coastal Dwelling",
+    year: "2023",
+    type: "Residential Design",
+    description: "A house designed around the experience of the horizon.",
     gap: "md",
     imageGroups: [
       {
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/architecture/3_P1/1.jpg", caption: "Project Overview" },
+          { src: "https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?w=1400&q=80", caption: "Site view" },
         ],
       },
       {
-        layout: "trio",
-        gap: "sm",
+        layout: "pair",
+        gap: "md",
         images: [
-          { src: "/images/architecture/3_P1/2.jpg", caption: "Ground Flr Plan" },
-          { src: "/images/architecture/3_P1/3.jpg", caption: "Mezzanine Flr Plan" },
-          { src: "/images/architecture/3_P1/4.jpg", caption: "First Flr Plan" },
-        ],
-      },
-       {
-        layout: "full",
-        gap: "sm",
-        images: [
-          { src: "/images/architecture/3_P1/5.jpg", caption: "Concept Sketch" },
-        ],
-      },
-      {
-        layout: "full",
-        gap: "sm",
-        images: [
-          { src: "/images/architecture/3_P1/6.jpg", caption: "Environmental Strategies" },
-        ],
-      },
-       {
-        layout: "trio",
-        gap: "sm",
-        images: [
-          { src: "/images/architecture/3_P1/7.jpg", caption: "" },
-          { src: "/images/architecture/3_P1/8.jpg", caption: "" },
-          { src: "/images/architecture/3_P1/9.jpg", caption: "" },
+          { src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80", caption: "Section" },
+          { src: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80", caption: "Detail" },
         ],
       },
     ],
   },
   {
     id: 3,
-    title: "The Playground",
-    year: "2023",
-    type: "Year 2 Project 3",
-    description: "A Sheffield newbuild aiming to provide a supportive network to help people back on their feet.",
-    gap: "md",
+    title: "Urban Threshold",
+    year: "2022",
+    type: "Urban Design",
+    description: "An intervention that redefines the edge between public and private space.",
+    gap: "lg",
     imageGroups: [
       {
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/architecture/2_P3/1.jpg", caption: "Project Overview" },
+          { src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1400&q=80", caption: "Street elevation" },
         ],
       },
       {
-        layout: "trio",
-        gap: "sm",
+        layout: "feature-left",
+        gap: "md",
         images: [
-          { src: "/images/architecture/2_P3/2.jpg", caption: "Ground Flr Plan" },
-          { src: "/images/architecture/2_P3/3.jpg", caption: "First Flr Plan" },
-          { src: "/images/architecture/2_P3/4.jpg", caption: "Second Flr Plan" },
-        ],
-      },
-      {
-        layout: "full",
-        gap: "sm",
-        images: [
-          { src: "/images/architecture/2_P3/5.jpg", caption: "Construction Section" },
-        ],
-      },
-       {
-        layout: "full",
-        gap: "sm",
-        images: [
-          { src: "/images/architecture/2_P3/6.jpg", caption: "Internal Courtyard" },
-        ],
-      },
-       {
-        layout: "full",
-        gap: "sm",
-        images: [
-          { src: "/images/architecture/2_P3/7.jpg", caption: "Street Interface" },
-        ],
-      },
-      {
-        layout: "pair",
-        gap: "sm",
-        images: [
-          { src: "/images/architecture/2_P3/8.jpg", caption: "Roof Garden" },
-          { src: "/images/architecture/2_P3/9.jpg", caption: "Apartment Int" },
-        ],
-      },
-   
-    ],
-  },
-  {
-    id: 4,
-    title: "Community Cinema/Theatre",
-    year: "2022/3",
-    type: "Year 2 Project 2",
-    description: "A mixed-use community theatre situated in the suburbs of Sheffield.",
-    gap: "md",
-    imageGroups: [
-      {
-        layout: "full",
-        gap: "sm",
-        images: [
-          { src: "/images/architecture/2_P2/1.jpg", caption: "Project Overview" },
-        ],
-      },
-       {
-        layout: "full",
-        gap: "sm",
-        images: [
-          { src: "/images/architecture/2_P2/2.jpg", caption: "Axonometric Breakdown" },
-        ],
-      },
-      {
-        layout: "full",
-        gap: "sm",
-        images: [
-          { src: "/images/architecture/2_P2/3.jpg", caption: "Massing Analysis" },
-        ],
-      },
-      {
-        layout: "trio",
-        gap: "sm",
-        images: [
-          { src: "/images/architecture/2_P2/4.jpg", caption: "Atrium" },
-          { src: "/images/architecture/2_P2/5.jpg", caption: "Circulation" },
-          { src: "/images/architecture/2_P2/6.jpg", caption: "Theatre Int" },
+          { src: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1000&q=80", caption: "Detail" },
+          { src: "https://images.unsplash.com/photo-1490971588704-2a2d5eab7e77?w=800&q=80", caption: "Plan" },
         ],
       },
     ],
   },
   {
-    id: 5,
-    title: "Community Space",
+    id: 4,
+    title: "Material Studies",
     year: "2022",
-    type: "Year 2 Project 1",
-    description: "A collaborative project centring around under-represented communities in the suburbs of Sheffield.",
-    gap: "md",
-    imageGroups: [
-      {
-        layout: "full",
-        gap: "sm",
-        images: [
-          { src: "/images/architecture/2_P1/1.JPG", caption: "Project Overview" },
-        ],
-      },
-      {
-        layout: "pair",
-        gap: "sm",
-        images: [
-          { src: "/images/architecture/2_P1/2.jpg", caption: "Structural Model" },
-          { src: "/images/architecture/2_P1/3.jpg", caption: "Structural Model" },
-        ],
-      },
-      {
-        layout: "pair",
-        gap: "sm",
-        images: [
-          { src: "/images/architecture/2_P1/4.jpg", caption: "Interior Perspective" },
-          { src: "/images/architecture/2_P1/5.jpg", caption: "Exterior Perspective" },
-        ],
-      },
-    ],
-  },
-   {
-    id: 6,
-    title: "Mixed-Use Dwelling",
-    year: "2022",
-    type: "Year 1 Project 4",
-    description: "A new build in the outskirts of Huddersfield for an artistic dwelling, workshop and studios.",
+    type: "Research",
+    description: "Investigations into the expressive potential of raw concrete and timber.",
     gap: "md",
     imageGroups: [
       {
         layout: "trio",
         gap: "sm",
         images: [
-          { src: "/images/architecture/1_P4/1.JPG", caption: "" },
-          { src: "/images/architecture/1_P4/2.JPG", caption: "" },
-          { src: "/images/architecture/1_P4/3.JPG", caption: "" },
+          { src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80", caption: "Model" },
+          { src: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1000&q=80", caption: "Detail study" },
+          { src: "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=800&q=80", caption: "Texture" },
         ],
       },
       {
         layout: "full",
-        gap: "sm",
+        gap: "md",
         images: [
-          { src: "/images/architecture/1_P4/4.JPG", caption: "" },
+          { src: "https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?w=1400&q=80", caption: "Full spread" },
         ],
       },
     ],
@@ -355,7 +162,7 @@ export default function ArchitecturePage() {
       {/* Banner — no grey bar */}
       <div className="relative w-full overflow-hidden" style={{ height: "60vh" }}>
         <ParallaxImage
-          src="/images/architecture/hoppers-hut/10.jpg"
+          src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1600&q=80"
           alt="Architecture"
           className="w-full h-full"
           priority
@@ -390,7 +197,9 @@ export default function ArchitecturePage() {
             className="max-w-xl text-stone-500 leading-relaxed"
             style={{ fontFamily: "var(--font-body)", fontSize: "0.9rem", fontWeight: 300 }}
           >
-            Architectural projects completed at Sheffield University for my Part 1 qualification.
+            Architectural projects spanning competition entries, residential design,
+            and urban interventions. Each project is presented as a curated sequence
+            of drawings, models, and built photography.
           </p>
         </ScrollReveal>
       </div>
@@ -550,7 +359,7 @@ function ImageGroup({
   if (layout === "pair") return (
     <div className="grid grid-cols-2 gap-2 md:gap-4">
       {images.slice(0, 2).map((img, i) => (
-        <ScrollReveal key={i} delay={0.05 + i * 0.08} direction={i === 0 ? "left" : "right"}>
+        <ScrollReveal key={i} delay={0.1} direction="none">
           <Img img={img} aspect="4/3" sizes="50vw" />
         </ScrollReveal>
       ))}
@@ -559,10 +368,10 @@ function ImageGroup({
 
   if (layout === "feature-left") return (
     <div className="grid grid-cols-5 gap-2 md:gap-4">
-      <ScrollReveal delay={0.1} className="md:col-span-3" direction="left">
+      <ScrollReveal delay={0.1} className="md:col-span-3" direction="none">
         <Img img={images[0]} aspect="4/3" sizes="60vw" />
       </ScrollReveal>
-      <ScrollReveal delay={0.2} className="md:col-span-2" direction="right">
+      <ScrollReveal delay={0.2} className="md:col-span-2" direction="none">
         <Img img={images[1]} aspect="4/3" sizes="40vw" />
       </ScrollReveal>
     </div>
@@ -570,10 +379,10 @@ function ImageGroup({
 
   if (layout === "feature-right") return (
     <div className="grid grid-cols-5 gap-2 md:gap-4">
-      <ScrollReveal delay={0.1} className="md:col-span-2" direction="left">
+      <ScrollReveal delay={0.1} className="md:col-span-2" direction="none">
         <Img img={images[0]} aspect="4/3" sizes="40vw" />
       </ScrollReveal>
-      <ScrollReveal delay={0.2} className="md:col-span-3" direction="right">
+      <ScrollReveal delay={0.2} className="md:col-span-3" direction="none">
         <Img img={images[1]} aspect="4/3" sizes="60vw" />
       </ScrollReveal>
     </div>
@@ -582,7 +391,7 @@ function ImageGroup({
   if (layout === "trio") return (
     <div className="grid grid-cols-3 gap-2 md:gap-4">
       {images.slice(0, 3).map((img, i) => (
-        <ScrollReveal key={i} delay={0.05 + i * 0.08}>
+        <ScrollReveal key={i} delay={0.1}>
           <Img img={img} aspect="4/3" sizes="33vw" />
         </ScrollReveal>
       ))}

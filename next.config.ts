@@ -1,5 +1,5 @@
 import type { NextConfig } from "next";
- 
+
 const nextConfig: NextConfig = {
   images: {
     // Bypass the image optimiser for all images.
@@ -9,5 +9,5 @@ const nextConfig: NextConfig = {
   },
   devIndicators: false,
 };
- 
+
 export default nextConfig;

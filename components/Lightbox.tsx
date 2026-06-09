@@ -48,58 +48,89 @@ export default function Lightbox({
           transition={{ duration: 0.4 }}
           onClick={onClose}
         >
-          {/* Close */}
+          {/* ── DESKTOP: close top right, counter top left ── */}
           <button
-            className="absolute top-6 right-8 text-white/70 hover:text-white text-sm tracking-widest uppercase transition-colors z-10 font-body"
+            className="hidden md:block absolute top-6 right-8 text-white/70 hover:text-white tracking-widest uppercase transition-colors z-10"
             onClick={onClose}
             style={{ fontFamily: "var(--font-body)", fontSize: "0.7rem", letterSpacing: "0.12em" }}
           >
             Close
           </button>
-
-          {/* Counter */}
           <span
-            className="absolute top-6 left-8 text-white/50"
+            className="hidden md:block absolute top-6 left-8 text-white/50"
             style={{ fontFamily: "var(--font-body)", fontSize: "0.7rem", letterSpacing: "0.1em" }}
           >
             {currentIndex + 1} / {images.length}
           </span>
 
-          {/* Image */}
+          {/* ── MOBILE: counter top left only (clear of hamburger) ── */}
+          <span
+            className="md:hidden absolute top-5 left-6 text-white/50"
+            style={{ fontFamily: "var(--font-body)", fontSize: "0.65rem", letterSpacing: "0.1em" }}
+          >
+            {currentIndex + 1} / {images.length}
+          </span>
+
+          {/* ── IMAGE ── */}
           <motion.div
             key={currentIndex}
-            className="relative w-full h-full flex items-center justify-center px-16 py-16"
+            className="relative w-full h-full flex items-center justify-center px-8 md:px-16 pb-24 md:pb-16 pt-16"
             initial={{ opacity: 0, scale: 0.97 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="relative max-h-full max-w-full" style={{ height: "80vh", width: "80vw" }}>
+            <div
+              className="relative max-h-full max-w-full"
+              style={{ height: "72vh", width: "88vw" }}
+            >
               <Image
                 src={images[currentIndex].src}
                 alt={images[currentIndex].alt}
                 fill
                 className="object-contain"
-                sizes="80vw"
+                sizes="88vw"
                 priority
               />
             </div>
           </motion.div>
 
-          {/* Caption */}
+          {/* ── DESKTOP: caption bottom centre ── */}
           {images[currentIndex].caption && (
             <div
-              className="absolute bottom-8 left-0 right-0 text-center text-white/50"
+              className="hidden md:block absolute bottom-8 left-0 right-0 text-center text-white/50"
               style={{ fontFamily: "var(--font-body)", fontSize: "0.7rem", letterSpacing: "0.08em" }}
             >
               {images[currentIndex].caption}
             </div>
           )}
 
-          {/* Prev / Next */}
+          {/* ── MOBILE: caption + close button centred below image ── */}
+          <div
+            className="md:hidden absolute bottom-8 left-0 right-0 flex flex-col items-center gap-4"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {images[currentIndex].caption && (
+              <span
+                className="text-white/40"
+                style={{ fontFamily: "var(--font-body)", fontSize: "0.6rem", letterSpacing: "0.1em", textTransform: "uppercase" }}
+              >
+                {images[currentIndex].caption}
+              </span>
+            )}
+            <button
+              onClick={onClose}
+              className="text-white/70 hover:text-white transition-colors border border-white/25 px-10 py-2.5"
+              style={{ fontFamily: "var(--font-body)", fontSize: "0.65rem", letterSpacing: "0.2em", textTransform: "uppercase" }}
+            >
+              Close
+            </button>
+          </div>
+
+          {/* ── PREV / NEXT ── */}
           <button
-            className="absolute left-4 md:left-8 text-white/50 hover:text-white transition-colors p-4"
+            className="absolute left-2 md:left-8 top-1/2 -translate-y-1/2 text-white/50 hover:text-white transition-colors p-4"
             onClick={(e) => { e.stopPropagation(); onPrev(); }}
             aria-label="Previous image"
           >
@@ -108,7 +139,7 @@ export default function Lightbox({
             </svg>
           </button>
           <button
-            className="absolute right-4 md:right-8 text-white/50 hover:text-white transition-colors p-4"
+            className="absolute right-2 md:right-8 top-1/2 -translate-y-1/2 text-white/50 hover:text-white transition-colors p-4"
             onClick={(e) => { e.stopPropagation(); onNext(); }}
             aria-label="Next image"
           >
