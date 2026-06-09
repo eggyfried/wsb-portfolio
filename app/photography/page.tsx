@@ -15,52 +15,415 @@ import Lightbox from "@/components/Lightbox";
 // ─────────────────────────────────────────────
 const photos = [
   {
-    src: "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=1200&q=80",
-    caption: "Untitled, 2024",
+    src: "/images/photography/a.jpg",
+    caption: "osaka, japan, 2025",
   },
   {
-    src: "https://images.unsplash.com/photo-1509721434272-b79147e0e708?w=800&q=80",
-    caption: "Study I, 2024",
+    src: "/images/photography/b.jpg",
+    caption: "kyoto, japan, 2025",
   },
   {
-    src: "https://images.unsplash.com/photo-1527334919515-b8dee906a34b?w=800&q=80",
-    caption: "Light Study, 2023",
+    src: "/images/photography/c.jpg",
+    caption: "St Ives, UK, 2024",
   },
   {
-    src: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=1200&q=80",
-    caption: "Landscape Series, 2023",
+    src: "/images/photography/d.JPG",
+    caption: "Seven Sisters, UK, 2023",
   },
   {
-    src: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=800&q=80",
-    caption: "Interior, 2023",
+    src: "/images/photography/e.jpg",
+    caption: "Hong Kong, 2026",
   },
   {
-    src: "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=800&q=80",
-    caption: "Nocturne I, 2022",
+    src: "/images/photography/f.jpg",
+    caption: "Kyoto, Japan, 2025",
   },
   {
-    src: "https://images.unsplash.com/photo-1521334726092-b509a19597c6?w=800&q=80",
-    caption: "Portrait Study, 2022",
+    src: "/images/photography/g.jpg",
+    caption: "Hong Kong, 2023",
   },
   {
-    src: "https://images.unsplash.com/photo-1475775030903-83cdb1f2e97f?w=1200&q=80",
-    caption: "Urban Fragment, 2022",
+    src: "/images/photography/h.jpg",
+    caption: "Yamagata, Japan, 2025",
   },
   {
-    src: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?w=800&q=80",
-    caption: "Still Life, 2021",
+    src: "/images/photography/i.jpg",
+    caption: "Kyoto, Japan, 2025",
   },
   {
-    src: "https://images.unsplash.com/photo-1494145904049-0dca59b4bbad?w=800&q=80",
-    caption: "Architecture Detail, 2021",
+    src: "/images/photography/j.jpg",
+    caption: "Hong Kong, 2023",
   },
   {
-    src: "https://images.unsplash.com/photo-1417325384643-aac51acc9e5d?w=1200&q=80",
-    caption: "Coast, 2021",
+    src: "/images/photography/k.jpg",
+    caption: "Iceland, 2018",
   },
   {
-    src: "https://images.unsplash.com/photo-1443890484047-5eaa67d1d630?w=800&q=80",
-    caption: "Winter Study, 2020",
+    src: "/images/photography/l.jpg",
+    caption: "Hong Kong, 2026",
+  },
+  {
+    src: "/images/photography/m.jpg",
+    caption: "Hakone, Japan, 2025",
+  },
+  {
+    src: "/images/photography/n.jpg",
+    caption: "Peak District, UK, 2022",
+  },
+  {
+    src: "/images/photography/o.jpg",
+    caption: "Rye, UK, 2025",
+  },
+  {
+    src: "/images/photography/p.jpg",
+    caption: "Hong Kong, 2023",
+  },
+  {
+    src: "/images/photography/q.jpg",
+    caption: "Osaka, Japan, 2025",
+  },
+  {
+    src: "/images/photography/r.jpg",
+    caption: "Seven Sisters, Uk, 2023",
+  },
+  {
+    src: "/images/photography/s.jpg",
+    caption: "Nagano, Japan, 2025",
+  },
+  {
+    src: "/images/photography/t.jpg",
+    caption: "Hakone, Japan, 2025",
+  },
+  {
+    src: "/images/photography/u.JPG",
+    caption: "Staplehurst, Uk 2023",
+  },
+  {
+    src: "/images/photography/v.jpg",
+    caption: "Iceland, 2018",
+  },
+  {
+    src: "/images/photography/w.jpg",
+    caption: "Gujo, Japan, 2025",
+  },
+  {
+    src: "/images/photography/x.jpg",
+    caption: "Hong Kong, 2026",
+  },
+  {
+    src: "/images/photography/y.jpg",
+    caption: "Nagano, Japan, 2025",
+  },
+  {
+    src: "/images/photography/z.jpg",
+    caption: "Gujo, Japan 2025",
+  },
+  {
+    src: "/images/photography/aa.jpg",
+    caption: "Sheffield, UK, 2024",
+  },
+  {
+    src: "/images/photography/bb.jpg",
+    caption: "Hong Kong, 2026",
+  },
+  {
+    src: "/images/photography/cc.jpg",
+    caption: "Amsterdam, 2023",
+  },
+  {
+    src: "/images/photography/dd.jpg",
+    caption: "Kyoto, Japan, 2023",
+  },
+  {
+    src: "/images/photography/ee.jpg",
+    caption: "Hong Kong, 2026",
+  },
+  {
+    src: "/images/photography/ff.jpg",
+    caption: "Nagano, Japan, 2025",
+  },
+  {
+    src: "/images/photography/gg.jpg",
+    caption: "Hong Kong, 2026",
+  },
+  {
+    src: "/images/photography/hh.jpg",
+    caption: "Hong Kong, 2023",
+  },
+  {
+    src: "/images/photography/ii.jpg",
+    caption: "Hong Kong, 2026",
+  },
+  {
+    src: "/images/photography/jj.jpg",
+    caption: "Tokyo, Japan, 2025",
+  },
+  {
+    src: "/images/photography/kk.jpg",
+    caption: "Helsinki, Finland, 2026",
+  },
+  {
+    src: "/images/photography/ll.jpg",
+    caption: "Nagano, Japan, 2025",
+  },
+  {
+    src: "/images/photography/mm.jpg",
+    caption: "Hong Kong, 2026",
+  },
+  {
+    src: "/images/photography/oo.jpg",
+    caption: "Hong Kong, 2026",
+  },
+  {
+    src: "/images/photography/pp.jpg",
+    caption: "Hong Kong, 2023",
+  },
+  {
+    src: "/images/photography/qq.jpg",
+    caption: "Kyoto, Japan, 2025",
+  },
+  {
+    src: "/images/photography/rr.jpg",
+    caption: "Hong Kong, 2026",
+  },
+  {
+    src: "/images/photography/ss.jpg",
+    caption: "Hong Kong, 2019",
+  },
+  {
+    src: "/images/photography/tt.jpg",
+    caption: "Rye, UK, 2025",
+  },
+  {
+    src: "/images/photography/uu.jpg",
+    caption: "Tokyo, Japan, 2025",
+  },
+  {
+    src: "/images/photography/vv.jpg",
+    caption: "Matsumoto, Japan, 2025",
+  },
+  {
+    src: "/images/photography/ww.jpg",
+    caption: "Peak District, UK, 2024",
+  },
+  {
+    src: "/images/photography/xx.jpg",
+    caption: "Naxos, Greece, 2022",
+  },
+  {
+    src: "/images/photography/yy.jpg",
+    caption: "Gujo, Japan, 2025",
+  },
+  {
+    src: "/images/photography/zz.jpg",
+    caption: "Kyoto, Japan, 2025",
+  },
+  {
+    src: "/images/photography/aaa.jpg",
+    caption: "Iceland, 2018",
+  },
+  {
+    src: "/images/photography/bbb.jpg",
+    caption: "Kyoto, Japan, 2025",
+  },
+  {
+    src: "/images/photography/ccc.jpg",
+    caption: "Peak District, UK, 2023",
+  },
+  {
+    src: "/images/photography/ddd.jpg",
+    caption: "Nagano, Japan, 2025",
+  },
+  {
+    src: "/images/photography/eee.jpg",
+    caption: "Seven Sisters, UK, 2023",
+  },
+  {
+    src: "/images/photography/fff.jpg",
+    caption: "Naxos, Greece, 2022",
+  },
+  {
+    src: "/images/photography/ggg.jpg",
+    caption: "Peak District, UK, 2023",
+  },
+  {
+    src: "/images/photography/hhh.jpg",
+    caption: "Iceland, 2018",
+  },
+  {
+    src: "/images/photography/iii.jpg",
+    caption: "Nagano, Japan, 2025",
+  },
+  {
+    src: "/images/photography/jjj.jpg",
+    caption: "Kyoto, Japan, 2025",
+  },
+  {
+    src: "/images/photography/kkk.jpg",
+    caption: "Peak District, UK, 2023",
+  },
+  {
+    src: "/images/photography/lll.jpg",
+    caption: "London, UK, 2018",
+  },
+  {
+    src: "/images/photography/mmm.jpg",
+    caption: "Seven Sisters, UK, 2020",
+  },
+  {
+    src: "/images/photography/nnn.jpg",
+    caption: "Tokyo, Japan, 2025",
+  },
+  {
+    src: "/images/photography/ooo.jpg",
+    caption: "Nagano, Japan, 2025",
+  },
+  {
+    src: "/images/photography/ppp.jpg",
+    caption: "Hong Kong, 2023",
+  },
+  {
+    src: "/images/photography/qqq.jpg",
+    caption: "Tokyo, Japan, 2025",
+  },
+  {
+    src: "/images/photography/rrr.jpg",
+    caption: "Hakone, Japan, 2025",
+  },
+  {
+    src: "/images/photography/sss.jpg",
+    caption: "Nagano, Japan, 2025",
+  },
+  {
+    src: "/images/photography/ttt.jpg",
+    caption: "Peak District, UK, 2023",
+  },
+  {
+    src: "/images/photography/uuu.jpg",
+    caption: "Uji, Japan, 2025",
+  },
+  {
+    src: "/images/photography/vvv.jpg",
+    caption: "Gujo, Japan, 2025",
+  },
+  {
+    src: "/images/photography/www.jpg",
+    caption: "Yamagata, Japan, 2025",
+  },
+  {
+    src: "/images/photography/xxx.jpg",
+    caption: "Hong Kong, 2026",
+  },
+  {
+    src: "/images/photography/yyy.jpg",
+    caption: "Nagano, Japan, 2025",
+  },
+  {
+    src: "/images/photography/zzz.jpg",
+    caption: "Gujo, Japan, 2025",
+  },
+  {
+    src: "/images/photography/aaaa.jpg",
+    caption: "Takayama, Japan 2025",
+  },
+  {
+    src: "/images/photography/bbbb.jpg",
+    caption: "Kyoto, Japan, 2025",
+  },
+  {
+    src: "/images/photography/cccc.jpg",
+    caption: "Matsumoto, Japan, 2025",
+  },
+  {
+    src: "/images/photography/dddd.jpg",
+    caption: "Nagano, Japan, 2025",
+  },
+  {
+    src: "/images/photography/eeee.jpg",
+    caption: "Yamagata, Japan, 2025",
+  },
+  {
+    src: "/images/photography/ffff.jpg",
+    caption: "Gujo, Japan, 2025",
+  },
+  {
+    src: "/images/photography/gggg.jpg",
+    caption: "Tokyo, Japan, 2025",
+  },
+  {
+    src: "/images/photography/hhhh.jpg",
+    caption: "Nagano, Japan, 2025",
+  },
+  {
+    src: "/images/photography/iiii.jpg",
+    caption: "Hong Kong, 2026",
+  },
+  {
+    src: "/images/photography/jjjj.jpg",
+    caption: "Matsumoto, Japan, 2025",
+  },
+  {
+    src: "/images/photography/kkkk.jpg",
+    caption: "Tokyo, Japan, 2025",
+  },
+  {
+    src: "/images/photography/llll.jpg",
+    caption: "Takayama, Japan, 2025",
+  },
+  {
+    src: "/images/photography/mmmm.jpg",
+    caption: "Takayama, Japan, 2025",
+  },
+  {
+    src: "/images/photography/nnnn.jpg",
+    caption: "Cornwall, UK, 2019",
+  },
+  {
+    src: "/images/photography/oooo.jpg",
+    caption: "Takayama, Japan, 2025",
+  },{
+    src: "/images/photography/pppp.jpg",
+    caption: "Staplehurst, UK, 2025",
+  },
+  {
+    src: "/images/photography/qqqq.jpg",
+    caption: "Hong Kong, 2026",
+  },
+  {
+    src: "/images/photography/rrrr.jpg",
+    caption: "Gujo, Japan, 2025",
+  },
+  {
+    src: "/images/photography/ssss.jpg",
+    caption: "Takayama, Japan, 2025",
+  },
+  {
+    src: "/images/photography/tttt.jpg",
+    caption: "Matsumoto, Japan, 2025",
+  },
+  {
+    src: "/images/photography/uuuu.jpg",
+    caption: "Nagano, Japan, 2025",
+  },
+  {
+    src: "/images/photography/vvvv.jpg",
+    caption: "Hong Kong, 2019",
+  },
+  {
+    src: "/images/photography/wwww.jpg",
+    caption: "Rye, UK, 2025",
+  },
+  {
+    src: "/images/photography/xxxx.jpg",
+    caption: "Tokyo, Japan, 2025",
+  },
+  {
+    src: "/images/photography/yyyy.jpg",
+    caption: "Tokyo, Japan, 2025",
+  },
+  {
+    src: "/images/photography/zzzz.jpg",
+    caption: "Yamagata, Japan, 2025",
   },
 ];
 
