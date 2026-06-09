@@ -280,8 +280,7 @@ export default function ArtDirectionPage() {
             className="max-w-xl text-stone-500 leading-relaxed"
             style={{ fontFamily: "var(--font-body)", fontSize: "0.9rem", fontWeight: 300 }}
           >
-            A collection of art direction projects spanning theatre, opera, and live performance.
-            Each project explores the relationship between space, light, and narrative.
+           A collection of self-led work (with some hand draughting from FDI). These have been great for learning the overlaps between film and architecture. Each mini project aims to explore a different style of design.
           </p>
         </ScrollReveal>
       </div>

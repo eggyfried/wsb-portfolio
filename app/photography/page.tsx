@@ -456,7 +456,7 @@ export default function PhotographyPage() {
       {/* Banner */}
       <div className="relative w-full overflow-hidden" style={{ height: "60vh" }}>
         <ParallaxImage
-          src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=1600&q=80"
+          src="images/photography/header.jpg"
           alt="Photography"
           className="w-full h-full"
           priority
@@ -500,8 +500,7 @@ export default function PhotographyPage() {
               fontWeight: 300,
             }}
           >
-            A personal photographic practice running alongside design work —
-            exploring light, space, and the overlooked detail.
+            A small collection of film and digital, medium format, full frame, cropped and micro 4/3 (everything basically) photography that I've captured over the years.
           </p>
         </ScrollReveal>
       </div>

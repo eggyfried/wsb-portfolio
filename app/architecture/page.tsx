@@ -390,9 +390,7 @@ export default function ArchitecturePage() {
             className="max-w-xl text-stone-500 leading-relaxed"
             style={{ fontFamily: "var(--font-body)", fontSize: "0.9rem", fontWeight: 300 }}
           >
-            Architectural projects spanning competition entries, residential design,
-            and urban interventions. Each project is presented as a curated sequence
-            of drawings, models, and built photography.
+           Architectural projects completed at Sheffield University for my Part 1 qualification.
           </p>
         </ScrollReveal>
       </div>
