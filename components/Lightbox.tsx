@@ -30,12 +30,21 @@ export default function Lightbox({
 
   useEffect(() => {
     window.addEventListener("keydown", handleKey);
-    document.body.style.overflow = currentIndex !== null ? "hidden" : "";
     return () => {
       window.removeEventListener("keydown", handleKey);
-      document.body.style.overflow = "";
     };
-  }, [handleKey, currentIndex]);
+  }, [handleKey]);
+
+  useEffect(() => {
+    if (currentIndex !== null) {
+      document.documentElement.style.overflow = "hidden";
+    } else {
+      document.documentElement.style.overflow = "";
+    }
+    return () => {
+      document.documentElement.style.overflow = "";
+    };
+  }, [currentIndex]);
 
   return (
     <AnimatePresence>

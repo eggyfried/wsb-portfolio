@@ -19,8 +19,8 @@ export default function Navigation() {
   useEffect(() => { setMenuOpen(false); }, [pathname]);
 
   useEffect(() => {
-    document.body.style.overflow = menuOpen ? "hidden" : "";
-    return () => { document.body.style.overflow = ""; };
+    document.documentElement.style.overflow = menuOpen ? "hidden" : "";
+    return () => { document.documentElement.style.overflow = ""; };
   }, [menuOpen]);
 
   const isHome = pathname === "/";
