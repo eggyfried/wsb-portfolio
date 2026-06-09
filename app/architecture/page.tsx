@@ -488,9 +488,9 @@ function ImageGroup({
       />
       {/* Grey overlay + centred caption on hover */}
       {img.caption && (
-        <div className="absolute inset-0 bg-stone-900/0 group-hover:bg-stone-900/40 flex items-center justify-center">
+        <div className="absolute inset-0 bg-stone-900/0 group-hover:bg-stone-900/40 transition-all duration-500 ease-in-out flex items-center justify-center">
           <span
-            className="opacity-0 group-hover:opacity-100 text-white text-center px-4"
+            className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out text-white text-center px-4"
             style={{ fontFamily: "var(--font-body)", fontSize: "0.7rem", letterSpacing: "0.15em", textTransform: "uppercase" }}
           >
             {img.caption}
