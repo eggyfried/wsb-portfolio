@@ -16,11 +16,11 @@ import Lightbox from "@/components/Lightbox";
 const photos = [
   {
     src: "/images/photography/a.jpg",
-    caption: "osaka, japan, 2025",
+    caption: "Osaka, Japan, 2025",
   },
   {
     src: "/images/photography/b.jpg",
-    caption: "kyoto, japan, 2025",
+    caption: "Kyoto, Japan, 2025",
   },
   {
     src: "/images/photography/c.jpg",
