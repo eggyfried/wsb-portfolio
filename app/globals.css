@@ -27,6 +27,7 @@ html {
 html {
   background-color: var(--color-bg);
   overflow-x: hidden;
+  min-height: 100dvh;
 }
 
 body {
@@ -36,6 +37,7 @@ body {
   overflow-x: hidden;
   /* Hide default cursor globally when custom cursor is active */
   cursor: none;
+  min-height: 100dvh;
 }
 
 /* Restore cursor on touch devices */

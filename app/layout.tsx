@@ -45,7 +45,7 @@ export default function RootLayout({
         <LoadingScreen />
         <Navigation />
         <PageTransition>
-          <main>{children}</main>
+          <main className="min-h-screen">{children}</main>
         </PageTransition>
         <Footer />
       </body>
