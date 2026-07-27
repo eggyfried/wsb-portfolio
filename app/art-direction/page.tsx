@@ -70,7 +70,7 @@ const projects = [
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/art-direction/art-deco/3.pdf", caption: "Set P&E" },
+          { src: "/images/art-direction/art-deco/3.jpg", caption: "Set P&E" },
         ],
       },
     ],
