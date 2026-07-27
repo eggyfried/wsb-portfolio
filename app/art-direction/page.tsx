@@ -47,6 +47,36 @@ import ParallaxImage from "@/components/ParallaxImage";
 const projects = [
     {
     id: 1,
+    title: "Bay Window Set",
+    year: "2026",
+    description: "Initially a bay window built from 2x4s that expanded into an art deco themed set. Both 3d model and drawings were made using Rhino.",
+    gap: "md",
+    imageGroups: [
+      {
+        layout: "full",
+        gap: "sm",
+        images: [
+          { src: "/images/art-direction/art-deco/1.jpg", caption: "Rhino Model" },
+        ],
+      },
+      {
+        layout: "full",
+        gap: "sm",
+        images: [
+          { src: "/images/art-direction/art-deco/2.jpg", caption: "Rhino Model" },
+        ],
+      },
+       {
+        layout: "full",
+        gap: "sm",
+        images: [
+          { src: "/images/art-direction/art-deco/3.pdf", caption: "Set P&E" },
+        ],
+      },
+    ],
+  },
+  {
+    id: 2,
     title: "Easton Neston Manor",
     year: "2025/6",
     description: "Facade studies, doorway detail and stair P&E are all based on Easton Neston's Baroque architecture.",
@@ -92,7 +122,7 @@ const projects = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     title: "An American Dream",
     year: "2025",
     description: "Concept set based on the work of mid-century futurists and design around this period (e.g.Syd Mead, Charles Schridde, etc.) The hand-drafted work was completed at FDI's Pinewood Course.",
@@ -126,36 +156,6 @@ const projects = [
         gap: "sm",
         images: [
           { src: "/images/art-direction/american-dream/6.jpg", caption: "Door Detail" },
-        ],
-      },
-    ],
-  },
-  {
-    id: 3,
-    title: "Islamic Set",
-    year: "2025",
-    description: "Originally inspired by a rewatch of Lawrence of Arabia, the hand-drafted work was again completed at FDI's Pinewood Course.",
-    gap: "md",
-    imageGroups: [
-       {
-        layout: "full",
-        gap: "sm",
-        images: [
-          { src: "/images/art-direction/islamic/1.jpg", caption: "Sketchup P&E" },
-        ],
-      },
-      {
-        layout: "full",
-        gap: "sm",
-        images: [
-          { src: "/images/art-direction/islamic/2.jpg", caption: "Hand-Draughted P&E" },
-        ],
-      },
-       {
-        layout: "full",
-        gap: "sm",
-        images: [
-          { src: "/images/art-direction/islamic/3.jpg", caption: "Column Detail" },
         ],
       },
     ],
@@ -217,6 +217,36 @@ const projects = [
         images: [
           { src: "/images/art-direction/hoppers-hut/9.jpg", caption: "" },
           { src: "/images/art-direction/hoppers-hut/10.jpg", caption: "" },
+        ],
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: "Islamic Set",
+    year: "2025",
+    description: "Originally inspired by a rewatch of Lawrence of Arabia, the hand-drafted work was again completed at FDI's Pinewood Course.",
+    gap: "md",
+    imageGroups: [
+       {
+        layout: "full",
+        gap: "sm",
+        images: [
+          { src: "/images/art-direction/islamic/1.jpg", caption: "Sketchup P&E" },
+        ],
+      },
+      {
+        layout: "full",
+        gap: "sm",
+        images: [
+          { src: "/images/art-direction/islamic/2.jpg", caption: "Hand-Draughted P&E" },
+        ],
+      },
+       {
+        layout: "full",
+        gap: "sm",
+        images: [
+          { src: "/images/art-direction/islamic/3.jpg", caption: "Column Detail" },
         ],
       },
     ],
