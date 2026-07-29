@@ -31,6 +31,7 @@ export const metadata: Metadata = {
     description: "Art Direction · Architecture · Photography",
     type: "website",
   },
+  themeColor: "#fafaf9",
 };
 
 export default function RootLayout({

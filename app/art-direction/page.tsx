@@ -70,7 +70,14 @@ const projects = [
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/art-direction/art-deco/3.jpg", caption: "Set P&E" },
+          { src: "/images/art-direction/art-deco/3.jpg", caption: "Rhino P&E" },
+        ],
+      },
+      {
+        layout: "full",
+        gap: "sm",
+        images: [
+          { src: "/images/art-direction/art-deco/4.jpg", caption: "Rhino Window Detail" },
         ],
       },
     ],
@@ -102,21 +109,21 @@ const projects = [
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/art-direction/easton-neston/5.jpg", caption: "Door Detail" },
+          { src: "/images/art-direction/easton-neston/5.jpg", caption: "Autocad Door Detail" },
         ],
       },
        {
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/art-direction/easton-neston/6.jpg", caption: "Facade P&E" },
+          { src: "/images/art-direction/easton-neston/6.jpg", caption: "Autocad Facade P&E" },
         ],
       },
       {
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/art-direction/easton-neston/7.jpg", caption: "Interior Stair P&E" },
+          { src: "/images/art-direction/easton-neston/7.jpg", caption: "Autocad & Hand-Drawn Interior Stair P&E" },
         ],
       },
     ],
@@ -132,7 +139,7 @@ const projects = [
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/art-direction/american-dream/1.jpg", caption: "Set Concept" },
+          { src: "/images/art-direction/american-dream/1.jpg", caption: "Photoshop Set Concept" },
         ],
       },
       {
@@ -155,7 +162,7 @@ const projects = [
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/art-direction/american-dream/6.jpg", caption: "Door Detail" },
+          { src: "/images/art-direction/american-dream/6.jpg", caption: "Autocad Door Detail" },
         ],
       },
     ],
@@ -179,28 +186,28 @@ const projects = [
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/art-direction/hoppers-hut/3.jpg", caption: "Rercreated Building" },
+          { src: "/images/art-direction/hoppers-hut/3.jpg", caption: "Sketchup Building Recreation" },
         ],
       },
       {
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/art-direction/hoppers-hut/4.jpg", caption: "Building Structure" },
+          { src: "/images/art-direction/hoppers-hut/4.jpg", caption: "Sketchup Building Structure" },
         ],
       },
         {
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/art-direction/hoppers-hut/5.jpg", caption: "Set Concept" },
+          { src: "/images/art-direction/hoppers-hut/5.jpg", caption: "Hand-Drawn & Photoshopped Set Concept" },
         ],
       },
         {
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/art-direction/hoppers-hut/6.jpg", caption: "Set P&E" },
+          { src: "/images/art-direction/hoppers-hut/6.jpg", caption: "Hand-Draughted Set P&E" },
         ],
       },
       {
@@ -246,7 +253,7 @@ const projects = [
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/art-direction/islamic/3.jpg", caption: "Column Detail" },
+          { src: "/images/art-direction/islamic/3.jpg", caption: "Hand-Draughted SSColumn Detail" },
         ],
       },
     ],
