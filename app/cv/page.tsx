@@ -83,14 +83,15 @@ const skills = [
 
 const software = [
   "AutoCAD — 2D",
-  "Rhino",
-  "SketchUp (3D + Layout)",
-  "Enscape (Rendering)",
+  "Rhino - 3D + 2D",
+  "SketchUp - 3D + 2D ",
+  "Enscape",
   "Photoshop",
   "Illustrator",
   "InDesign",
   "Lightroom",
   "Capture One",
+  "Claude.AI",
   "Office 365 (Word, PowerPoint, Excel)",
 ];
 
@@ -118,7 +119,7 @@ export default function CVPage() {
                 textTransform: "uppercase",
               }}
             >
-              Art Department Assistant — UK Based (South East)
+              Architecture Graduate — UK Based (South East)
             </p>
             <h1
               className="font-display font-light text-stone-900"
