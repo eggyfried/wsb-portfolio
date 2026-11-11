@@ -116,25 +116,7 @@ export default function HomePage() {
           </motion.div>
         </motion.div>
 
-        {/* Scroll indicator */}
-        <motion.div
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1.5 }}
-        >
-          <span
-            className="text-white/40"
-            style={{ fontFamily: "var(--font-body)", fontSize: "0.6rem", letterSpacing: "0.2em", textTransform: "uppercase" }}
-          >
-            Scroll
-          </span>
-          <motion.div
-            className="w-px h-12 bg-white/30 origin-top"
-            animate={{ scaleY: [0, 1, 0], y: [0, 0, 12] }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          />
-        </motion.div>
+        
       </section>
 
       {/* Category Navigation */}
