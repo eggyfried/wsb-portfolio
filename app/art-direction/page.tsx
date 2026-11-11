@@ -180,8 +180,16 @@ const projects = [
         layout: "pair",
         gap: "sm",
         images: [
-          { src: "/images/art-direction/american-dream/7.jpg", caption: "Prop Sketches" },
-          { src: "/images/art-direction/american-dream/8.jpg", caption: "Prop Modelled & Rendered" },
+          { src: "/images/art-direction/american-dream/7.jpg", caption: "Animated Dog Sketches" },
+          { src: "/images/art-direction/american-dream/8.jpg", caption: "Dog Modelled & Rendered" },
+        ],
+      },
+      {
+        layout: "pair",
+        gap: "sm",
+        images: [
+          { src: "/images/art-direction/american-dream/9.jpg", caption: "Rendered Centerpiece Clock" },
+          { src: "/images/art-direction/american-dream/10.jpg", caption: "Clock Sketches" },
         ],
       },
     ],
