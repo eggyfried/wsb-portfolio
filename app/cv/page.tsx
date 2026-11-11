@@ -3,54 +3,98 @@
 import { motion } from "framer-motion";
 import ScrollReveal from "@/components/ScrollReveal";
 
-const experience = [
+type Entry = {
+  year: string;
+  title: string;
+  subtitle?: string;
+  description?: string;
+  points?: string[];
+};
+
+// ─────────────────────────────────────────────────────────────────
+// PROFILE — each string is one paragraph
+// ─────────────────────────────────────────────────────────────────
+const profile = [
+  "BA(Hons) Architecture graduate seeking an Art Department Assistant role, with a view to pursue a career in art direction / set design, available immediately.",
+  "Recently exploring film / TV set design has significantly built upon technical and soft skills established at architecture school and my varied experience. I'm moving forward with all I have learnt across film, architecture and my various hospitality jobs, to further my career in a like-minded and exciting environment.",
+];
+
+// ─────────────────────────────────────────────────────────────────
+// EXPERIENCE — split into Film, Architectural and Other
+// Each entry: year, title, optional subtitle, optional description,
+// optional points (a short bulleted list)
+// ─────────────────────────────────────────────────────────────────
+const filmExperience: Entry[] = [
   {
     year: "July 2025",
     title: "Avengers: Doomsday",
-    subtitle: "Work Experience",
-    description: "Art Department. Production Designer: Gavin Bocquet.",
+    subtitle: "Work Experience, London",
+    description: "Production Designer: Gavin Bocquet.",
   },
   {
     year: "July 2025",
-    title: "Ahsoka Season 2",
-    subtitle: "Work Experience",
-    description: "Art Department. Production Designer: Martin Foley.",
+    title: "Star Wars: Ahsoka S2",
+    subtitle: "Work Experience, London",
+    description: "Production Designer: Martin Foley.",
   },
-  {
-    year: "2025 — Present",
-    title: "Freelance Photography",
-    description: "Images for marketing at a local school.",
-  },
-  {
-    year: "2025 — Present",
-    title: "The Three Chimneys",
-    description: "Front of house, pub / restaurant.",
-  },
-  {
-    year: "2024 — Present",
-    title: "Suitable People",
-    description: "Catering assistant.",
-  },
+];
+
+const architecturalExperience: Entry[] = [
   {
     year: "Aug. — Oct. 2024",
     title: "Hollaway Studio",
-    description:
-      "Part 1 Architectural Assistant. Draughting (AutoCAD), concept design, working to client brief, location work, 3D modelling (SketchUp), rendering (Enscape).",
+    subtitle: "Part 1 Architectural Assistant, S/E England",
+    points: [
+      "Draughting (AutoCAD)",
+      "Site + massing modelling (SketchUp)",
+      "Rendering (Enscape + Photoshop)",
+      "Early concept design to the client's brief",
+      "Creating documents for planning and tender",
+    ],
   },
   {
     year: "July 2023",
-    title: "Morphis",
-    description:
-      "Landscape architect work experience. Draughting design options (AutoCAD), rendering (Photoshop).",
+    title: "Morphis Design",
+    subtitle: "Landscape Architecture Intern, Hong Kong",
+    points: [
+      "Draughting design options (AutoCAD)",
+      "Rendering (Photoshop)",
+      "Creating documents for concept design",
+      "Taking minutes",
+    ],
+  },
+  {
+    year: "July 2019",
+    title: "Studio PDP",
+    subtitle: "Architecture Work Experience, London",
+    points: [
+      "Contextually based design assignment",
+      "Massing (SketchUp)",
+    ],
+  },
+];
+
+const otherExperience: Entry[] = [
+  {
+    year: "2025 — Present",
+    title: "Freelance Photography",
+    description: "Marketing images.",
+  },
+  {
+    year: "2018 — Present",
+    title: "Various Hospitality",
+    description: "Weddings, private family functions, pubs etc.",
   },
   {
     year: "2022 — 2024",
     title: "Farm Hand",
-    description: "Hop picking.",
   },
 ];
 
-const education = [
+// ─────────────────────────────────────────────────────────────────
+// EDUCATION
+// ─────────────────────────────────────────────────────────────────
+const education: Entry[] = [
   {
     year: "Jan. 2025",
     title: "FDI Art Direction for Film & Television",
@@ -59,40 +103,45 @@ const education = [
   {
     year: "2021 — 2024",
     title: "Sheffield School of Architecture",
-    description: "BA(Hons) Architecture — 2:1. Special Study — 1st.",
+    description: "BA(Hons) Architecture (2:1). Special Study (1st).",
   },
   {
     year: "2016 — 2021",
     title: "Eastbourne College",
-    description: "A-Levels: Design & Technology (A*), Art (A*), Business (A).",
+    description: "A-Levels: DT (A*), Art (A*), Business (A).",
   },
 ];
 
+// ─────────────────────────────────────────────────────────────────
+// SKILLS + SOFTWARE
+// ─────────────────────────────────────────────────────────────────
 const skills = [
-  "Technical Drawing (Imperial & Metric)",
-  "3D Modelling",
-  "Scale Model Making (Sketch + Detail)",
-  "Sketch / Visual Communication",
-  "Document Collation + Presentation",
+  "Technical Drawing",
+  "CAD Modelling",
+  "Scale Model Making",
+  "Working in Metric + Imperial",
+  "Visual Communication",
+  "Document Collation",
+  "Presenting",
   "Collaborative Working",
-  "Photography",
+  "Hands-on Working",
   "Organised Working",
-  "Degree of Management / Leadership",
-  "Sustainable Design",
+  "Pragmatic Decision Making",
 ];
 
 const software = [
+  "Rhino (3D + 2D)",
   "AutoCAD — 2D",
-  "Rhino - 3D + 2D",
-  "SketchUp - 3D + 2D ",
-  "Enscape",
+  "SketchUp (3D + 2D)",
+  "Enscape (Rendering)",
   "Photoshop",
-  "Illustrator",
   "InDesign",
+  "Illustrator",
   "Lightroom",
   "Capture One",
-  "Claude.AI",
-  "Office 365 (Word, PowerPoint, Excel)",
+  "Microsoft Word",
+  "Microsoft PowerPoint",
+  "Microsoft Excel",
 ];
 
 export default function CVPage() {
@@ -119,7 +168,7 @@ export default function CVPage() {
                 textTransform: "uppercase",
               }}
             >
-              Architecture Graduate — UK Based (South East)
+              Art Department Assistant — Available to work, UK based
             </p>
             <h1
               className="font-display font-light text-stone-900"
@@ -171,42 +220,17 @@ export default function CVPage() {
         {/* Profile */}
         <ScrollReveal>
           <div className="mb-12">
-            <SectionLabel>Profile</SectionLabel>
-            <div className="max-w-2xl">
-              <p
-                className="text-stone-600 leading-relaxed mb-5"
-                style={{ fontFamily: "var(--font-body)", fontSize: "0.88rem", fontWeight: 300 }}
-              >
-                Pursuing a passion for film having come from architecture — a path that reflects
-                determination and a can-do attitude for my future career. I have been fortunate
-                in my variety of experiences in different sectors that have taught me many
-                valuable lessons:
-              </p>
-              <ul className="space-y-2 mb-5">
-                {[
-                  "Farming has taught me the value of putting in 110% and a hard day's work.",
-                  "Hospitality has taught me how to work effectively with and for others to the highest standards.",
-                  "Architecture has taught me how to work to elaborate briefs under intense time pressures and practical restrictions.",
-                  "Photography has taught me how to work with a client to collaboratively realise their vision.",
-                ].map((item, i) => (
-                  <li
-                    key={i}
-                    className="text-stone-500 flex gap-3"
-                    style={{ fontFamily: "var(--font-body)", fontSize: "0.88rem", fontWeight: 300 }}
-                  >
-                    <span className="text-stone-300 shrink-0 mt-0.5">—</span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <p
-                className="text-stone-600 leading-relaxed"
-                style={{ fontFamily: "var(--font-body)", fontSize: "0.88rem", fontWeight: 300 }}
-              >
-                I am excited for my next chapter amongst the ever changing world of film and to
-                begin working amongst passionate, hardworking teams; building new skills and
-                contributing all I have learnt so far.
-              </p>
+            <SectionLabel>Personal Statement</SectionLabel>
+            <div className="max-w-2xl space-y-4">
+              {profile.map((para, i) => (
+                <p
+                  key={i}
+                  className="text-stone-600 leading-relaxed"
+                  style={{ fontFamily: "var(--font-body)", fontSize: "0.88rem", fontWeight: 300 }}
+                >
+                  {para}
+                </p>
+              ))}
             </div>
           </div>
         </ScrollReveal>
@@ -214,18 +238,38 @@ export default function CVPage() {
         <div className="border-t border-stone-100 mb-12" />
 
         {/* Two column layout — left: experience + education / right: skills + software */}
-        {/* Mobile: skills shown before education via order classes */}
+        {/* Mobile: skills shown before experience via order classes */}
         <div className="flex flex-col md:flex-row gap-0 md:gap-24 pb-16 md:items-stretch">
 
-          {/* LEFT COLUMN — Experience + Education */}
+          {/* LEFT COLUMN — Film, Architectural, Other experience + Education */}
           <div className="flex-1 min-w-0 flex flex-col order-2 md:order-1">
 
-            {/* Experience */}
+            {/* Film Experience */}
             <div className="mb-10">
               <ScrollReveal>
-                <SectionLabel>Experience</SectionLabel>
+                <SectionLabel>Film Experience</SectionLabel>
               </ScrollReveal>
-              <TimelineSection entries={experience} />
+              <TimelineSection entries={filmExperience} />
+            </div>
+
+            <div className="border-t border-stone-100 mb-10" />
+
+            {/* Architectural Experience */}
+            <div className="mb-10">
+              <ScrollReveal>
+                <SectionLabel>Architectural Experience</SectionLabel>
+              </ScrollReveal>
+              <TimelineSection entries={architecturalExperience} />
+            </div>
+
+            <div className="border-t border-stone-100 mb-10" />
+
+            {/* Other Experience */}
+            <div className="mb-10">
+              <ScrollReveal>
+                <SectionLabel>Other Experience</SectionLabel>
+              </ScrollReveal>
+              <TimelineSection entries={otherExperience} />
             </div>
 
             <div className="border-t border-stone-100 mb-10" />
@@ -237,6 +281,7 @@ export default function CVPage() {
               </ScrollReveal>
               <TimelineSection entries={education} />
             </div>
+
             {/* Grow spacer — equalises left column height with right */}
             <div className="flex-1" />
           </div>
@@ -265,7 +310,7 @@ export default function CVPage() {
 
             {/* Software */}
             <ScrollReveal delay={0.08}>
-              <SectionLabel>Software</SectionLabel>
+              <SectionLabel>Software Skills</SectionLabel>
               <ul className="space-y-2.5">
                 {software.map((item, i) => (
                   <li
@@ -318,11 +363,7 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
   );
 }
 
-function TimelineSection({
-  entries,
-}: {
-  entries: { year: string; title: string; subtitle?: string; description: string }[];
-}) {
+function TimelineSection({ entries }: { entries: Entry[] }) {
   return (
     <div className="relative">
       <div className="absolute left-0 top-0 bottom-0 w-px bg-stone-200 hidden md:block" />
@@ -354,26 +395,42 @@ function TimelineSection({
               </div>
               {/* Content */}
               <div className="flex-1">
-                {entry.subtitle && (
-                  <p
-                    className="text-stone-400 mb-0.5"
-                    style={{ fontFamily: "var(--font-body)", fontSize: "0.65rem", letterSpacing: "0.18em", textTransform: "uppercase" }}
-                  >
-                    {entry.subtitle}
-                  </p>
-                )}
                 <p
                   className="text-stone-900 mb-1"
                   style={{ fontFamily: "var(--font-body)", fontSize: "0.78rem", fontWeight: 400, letterSpacing: "0.06em", textTransform: "uppercase" }}
                 >
                   {entry.title}
                 </p>
-                <p
-                  className="text-stone-500 leading-relaxed"
-                  style={{ fontFamily: "var(--font-body)", fontSize: "0.82rem", fontWeight: 300 }}
-                >
-                  {entry.description}
-                </p>
+                {entry.subtitle && (
+                  <p
+                    className="text-stone-400 mb-1"
+                    style={{ fontFamily: "var(--font-body)", fontSize: "0.65rem", letterSpacing: "0.18em", textTransform: "uppercase" }}
+                  >
+                    {entry.subtitle}
+                  </p>
+                )}
+                {entry.description && (
+                  <p
+                    className="text-stone-500 leading-relaxed"
+                    style={{ fontFamily: "var(--font-body)", fontSize: "0.82rem", fontWeight: 300 }}
+                  >
+                    {entry.description}
+                  </p>
+                )}
+                {entry.points && (
+                  <ul className="mt-2 space-y-1">
+                    {entry.points.map((point, j) => (
+                      <li
+                        key={j}
+                        className="text-stone-500 flex gap-3 items-start"
+                        style={{ fontFamily: "var(--font-body)", fontSize: "0.82rem", fontWeight: 300 }}
+                      >
+                        <span className="text-stone-300 shrink-0">—</span>
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
             </div>
           </ScrollReveal>
