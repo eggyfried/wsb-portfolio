@@ -97,12 +97,11 @@ const projects = [
         ],
       },
       {
-        layout: "trio",
+        layout: "pair",
         gap: "sm",
         images: [
-          { src: "/images/art-direction/easton-neston/2.jpg", caption: "" },
-          { src: "/images/art-direction/easton-neston/3.jpg", caption: "" },
-          { src: "/images/art-direction/easton-neston/4.jpg", caption: "" },
+          { src: "/images/art-direction/easton-neston/2.JPG", caption: "" },
+          { src: "/images/art-direction/easton-neston/3.JPG", caption: "" },
         ],
       },
       {
@@ -131,8 +130,8 @@ const projects = [
   {
     id: 3,
     title: "An American Dream",
-    year: "2025",
-    description: "Concept set based on the work of mid-century futurists and design around this period (e.g.Syd Mead, Charles Schridde, etc.) The hand-drafted work was completed at FDI's Pinewood Course.",
+    year: "2025/6",
+    description: "Mid-Century futurist concept set of an interplanetary airline, based on the TWA Flight Center. The hand-drafted work was completed at FDI's Pinewood Course.",
     gap: "md",
     imageGroups: [
       {
@@ -143,12 +142,24 @@ const projects = [
         ],
       },
       {
-        layout: "trio",
+        layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/art-direction/american-dream/2.jpg", caption: "Massing Detail" },
-          { src: "/images/art-direction/american-dream/3.jpg", caption: "Massing Overview" },
-          { src: "/images/art-direction/american-dream/4.jpg", caption: "Massing Detail" },
+          { src: "/images/art-direction/american-dream/2.jpg", caption: "Rhino Set Model" },
+        ],
+      },
+      {
+        layout: "full",
+        gap: "sm",
+        images: [
+          { src: "/images/art-direction/american-dream/3.jpg", caption: "Rhino Set Model" },
+        ],
+      },
+      {
+        layout: "full",
+        gap: "sm",
+        images: [
+          { src: "/images/art-direction/american-dream/3.jpg", caption: "Rhino Set Section" },
         ],
       },
         {
@@ -163,6 +174,14 @@ const projects = [
         gap: "sm",
         images: [
           { src: "/images/art-direction/american-dream/6.jpg", caption: "Autocad Door Detail" },
+        ],
+      },
+      {
+        layout: "pair",
+        gap: "sm",
+        images: [
+          { src: "/images/art-direction/american-dream/7.JPG", caption: "Prop Sketches" },
+          { src: "/images/art-direction/american-dream/8.JPG", caption: "Prop Modelled & Rendered" },
         ],
       },
     ],
