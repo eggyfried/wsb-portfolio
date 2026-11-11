@@ -100,8 +100,8 @@ const projects = [
         layout: "pair",
         gap: "sm",
         images: [
-          { src: "/images/art-direction/easton-neston/2.JPG", caption: "" },
-          { src: "/images/art-direction/easton-neston/3.JPG", caption: "" },
+          { src: "/images/art-direction/easton-neston/2.jpg", caption: "" },
+          { src: "/images/art-direction/easton-neston/3.jpg", caption: "" },
         ],
       },
       {
@@ -115,7 +115,7 @@ const projects = [
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/art-direction/easton-neston/6.jpg", caption: "Autocad Facade P&E" },
+          { src: "/images/art-direction/easton-neston/6.png", caption: "Autocad Facade P&E" },
         ],
       },
       {
@@ -159,7 +159,7 @@ const projects = [
         layout: "full",
         gap: "sm",
         images: [
-          { src: "/images/art-direction/american-dream/3.jpg", caption: "Rhino Set Section" },
+          { src: "/images/art-direction/american-dream/4.jpg", caption: "Rhino Set Section" },
         ],
       },
         {
@@ -180,8 +180,8 @@ const projects = [
         layout: "pair",
         gap: "sm",
         images: [
-          { src: "/images/art-direction/american-dream/7.JPG", caption: "Prop Sketches" },
-          { src: "/images/art-direction/american-dream/8.JPG", caption: "Prop Modelled & Rendered" },
+          { src: "/images/art-direction/american-dream/7.jpg", caption: "Prop Sketches" },
+          { src: "/images/art-direction/american-dream/8.jpg", caption: "Prop Modelled & Rendered" },
         ],
       },
     ],
